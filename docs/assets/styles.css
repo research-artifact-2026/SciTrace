@@ -236,7 +236,7 @@ nav a[aria-current="page"] {
 }
 
 .section-body {
-  width: min(1290px, 100%);
+  width: min(1180px, 100%);
   margin-inline: auto;
   min-width: 0;
 }
