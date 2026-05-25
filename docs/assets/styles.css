@@ -210,8 +210,11 @@ nav a[aria-current="page"] {
 }
 
 .section > h2 {
+  width: min(1180px, 100%);
+  margin-inline: auto;
   position: relative;
-  margin: 0 0 28px;
+  margin-top: 0;
+  margin-bottom: 28px;
   padding-bottom: 16px;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -234,6 +237,7 @@ nav a[aria-current="page"] {
 
 .section-body {
   width: min(1290px, 100%);
+  margin-inline: auto;
   min-width: 0;
 }
 
