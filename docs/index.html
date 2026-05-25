@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SciTrace</title>
+    <link rel="stylesheet" href="assets/styles.css?v=3">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top">SciTrace</a>
+      <nav aria-label="Primary">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#experiments">Experiments</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero paper-hero">
+        <p class="venue">EMNLP 2026 Submission</p>
+        <h1>SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents</h1>
+
+        <div class="author-block" aria-label="Author placeholders">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="affiliation-line" aria-label="Affiliation placeholder"></div>
+
+        <div class="actions">
+          <a class="button primary" href="assets/SciTrace.pdf">Paper</a>
+          <a class="button" href="https://github.com/anonymous-scitrace/SciTrace">Anonymous GitHub</a>
+        </div>
+
+        <div class="hero-summary">
+          <article>
+            <strong>240</strong>
+            <span>High-risk research tasks</span>
+          </article>
+          <article>
+            <strong>120</strong>
+            <span>Tool-related risk tasks</span>
+          </article>
+          <article>
+            <strong>+14.3 pp</strong>
+            <span>Tool safety gain</span>
+          </article>
+          <article>
+            <strong>78.8%</strong>
+            <span>Compositional escapes detected</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="abstract">
+        <h2>Abstract</h2>
+        <div class="section-body">
+          <p>
+            LLM-based scientific agents have shown strong capacity for autonomous
+            research, yet their safety layers remain structurally divorced from
+            core reasoning: they inspect pipeline outputs rather than shaping the
+            deliberation that produces them. This separation opens two failure
+            modes: safety signals accumulated at one stage are discarded before
+            the next, and sequences of individually benign tool calls can compose
+            into harmful outcomes that no single-step filter detects.
+          </p>
+          <p>
+            To address these challenges, SciTrace weaves safety reasoning into
+            every stage of the scientific agent pipeline. It couples a
+            Safety-Intrinsic Reasoning Loop (SIR), which maintains cumulative
+            risk state across Thinker, Experimenter, Writer, and Reviewer stages,
+            with a Compositional Tool-Chain Verifier (CTV), which performs
+            trajectory-aware safety checks before execution.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="method">
+        <h2>Method</h2>
+        <div class="section-body">
+          <p>
+            SciTrace integrates safety reasoning directly into the four-stage
+            scientific discovery pipeline through two tightly coupled components
+            that share a single cumulative risk state throughout a pipeline run:
+            a Safety-Intrinsic Reasoning Loop (SIR) and a Compositional
+            Tool-Chain Verifier (CTV).
+          </p>
+          <p>
+            The underlying pipeline proceeds through Thinker, Experimenter,
+            Writer, and Reviewer stages. In SciTrace, SIR and CTV take over
+            primary responsibility for safety decisions at every stage transition
+            and tool call, superseding independent per-stage filters whenever the
+            intrinsic safety reasoning is active.
+          </p>
+          <figure class="figure-block">
+            <img src="assets/paper-figure-2.png" alt="SciTrace detailed architecture from the paper">
+            <figcaption>
+              Figure 2 from the paper: SciTrace uses SIR, a cumulative risk
+              state, CTV, and a verified tool proxy to make safety intrinsic to
+              scientific-agent execution.
+            </figcaption>
+          </figure>
+
+          <div class="method-grid">
+            <article>
+              <span>01</span>
+              <h3>Safety-Intrinsic Reasoning Loop</h3>
+              <p>
+                SIR performs joint task-and-safety reasoning at each stage. It
+                receives the current stage content, retrieved safety checks, and
+                the cumulative risk state, then emits a risk level and action.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Cumulative Risk State</h3>
+              <p>
+                Signals are stored across the entire run with five levels:
+                SAFE, LOW-RISK, WARNING, HIGH-RISK, and BLOCK. Interaction pairs
+                can escalate risk when categories co-occur.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Compositional Tool-Chain Verifier</h3>
+              <p>
+                CTV evaluates request harmfulness, compositional risk, and direct
+                tool invocation safety in the context of the full tool history.
+                It can allow, modify, or block a call.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiments">
+        <h2>Experiments</h2>
+        <div class="section-body">
+          <p>
+            We evaluate on SciSafetyBench, which contains 240 high-risk
+            scientific research tasks and 120 tool-related risk tasks spanning
+            six domains. Tasks are distributed across Physics, Chemistry,
+            Biology, Material Science, Information Science, and Medicine, with
+            30 specialized scientific tools.
+          </p>
+          <p>
+            SciTrace achieves the highest safety scores and reject rates across
+            all four backbone models while maintaining competitive quality
+            metrics. The largest safety gains appear in Biology and Chemistry,
+            where compositional synthesis risks are most prevalent.
+          </p>
+          <div class="note-grid">
+            <article>
+              <b>Benchmark</b>
+              <p>240 high-risk research tasks and 120 tool-related risk tasks across six scientific domains.</p>
+            </article>
+            <article>
+              <b>Models</b>
+              <p>Llama-3.1-70B, Qwen2.5-72B, DeepSeek-V3, and GPT-4o.</p>
+            </article>
+            <article>
+              <b>Metrics</b>
+              <p>Safety Score, Reject Rate, Tool Call Safety Rate, Quality, Clarity, and Overall.</p>
+            </article>
+          </div>
+
+          <div class="table-card">
+            <div class="table-title">
+              <h3>Safety and Quality Across Backbone Models</h3>
+              <p>Adapted from Table 3 in the paper.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Model</th>
+                    <th>Method</th>
+                    <th>Safety</th>
+                    <th>Reject</th>
+                    <th>Tool Safety</th>
+                    <th>Quality</th>
+                    <th>Clarity</th>
+                    <th>Overall</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Llama-3.1-70B</td><td>Bare LLM</td><td>2.35</td><td>0.0</td><td>38.5</td><td>1.78</td><td>1.82</td><td>3.10</td></tr>
+                  <tr><td>Llama-3.1-70B</td><td>SafeScientist</td><td>4.72</td><td>85.0</td><td>76.3</td><td>2.00</td><td>2.48</td><td>3.47</td></tr>
+                  <tr class="ours"><td>Llama-3.1-70B</td><td>SciTrace</td><td>4.87</td><td>92.0</td><td>91.2</td><td>2.12</td><td>2.62</td><td>3.68</td></tr>
+                  <tr><td>Qwen2.5-72B</td><td>Bare LLM</td><td>2.38</td><td>0.0</td><td>40.2</td><td>1.80</td><td>1.85</td><td>3.15</td></tr>
+                  <tr><td>Qwen2.5-72B</td><td>SafeScientist</td><td>4.75</td><td>87.0</td><td>78.1</td><td>2.02</td><td>2.50</td><td>3.50</td></tr>
+                  <tr class="ours"><td>Qwen2.5-72B</td><td>SciTrace</td><td>4.89</td><td>93.0</td><td>92.5</td><td>2.15</td><td>2.65</td><td>3.72</td></tr>
+                  <tr><td>DeepSeek-V3</td><td>Bare LLM</td><td>2.40</td><td>2.0</td><td>42.0</td><td>1.82</td><td>1.87</td><td>3.18</td></tr>
+                  <tr><td>DeepSeek-V3</td><td>SafeScientist</td><td>4.78</td><td>88.0</td><td>79.5</td><td>2.05</td><td>2.52</td><td>3.52</td></tr>
+                  <tr class="ours"><td>DeepSeek-V3</td><td>SciTrace</td><td>4.91</td><td>94.0</td><td>93.8</td><td>2.18</td><td>2.68</td><td>3.75</td></tr>
+                  <tr><td>GPT-4o</td><td>Bare LLM</td><td>2.50</td><td>0.0</td><td>45.5</td><td>1.92</td><td>2.02</td><td>3.30</td></tr>
+                  <tr><td>GPT-4o</td><td>SafeScientist</td><td>4.83</td><td>90.0</td><td>81.2</td><td>2.10</td><td>2.62</td><td>3.62</td></tr>
+                  <tr class="ours"><td>GPT-4o</td><td>SciTrace</td><td>4.93</td><td>95.0</td><td>94.7</td><td>2.22</td><td>2.75</td><td>3.82</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="table-grid">
+            <div class="table-card">
+              <div class="table-title">
+                <h3>Component Ablation</h3>
+                <p>Qwen2.5-72B, adapted from Table 4(a).</p>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr><th>Config</th><th>Safety</th><th>Reject</th><th>Tool Safety</th><th>Overall</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>SafeScientist</td><td>4.75</td><td>87.0</td><td>78.1</td><td>3.50</td></tr>
+                    <tr><td>+SIR</td><td>4.81</td><td>89.5</td><td>79.2</td><td>3.58</td></tr>
+                    <tr><td>+CTV</td><td>4.78</td><td>86.8</td><td>89.7</td><td>3.55</td></tr>
+                    <tr class="ours"><td>SciTrace</td><td>4.89</td><td>93.0</td><td>92.5</td><td>3.72</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="table-card">
+              <div class="table-title">
+                <h3>Per-Domain Tool Safety</h3>
+                <p>Qwen2.5-72B, adapted from Table 5.</p>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr><th>Domain</th><th>SafeSci</th><th>SciTrace</th><th>Esc.</th><th>Det.</th><th>Rate</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Biology</td><td>76.2</td><td>93.5</td><td>18</td><td>15</td><td>83.3%</td></tr>
+                    <tr><td>Chemistry</td><td>74.1</td><td>91.3</td><td>16</td><td>13</td><td>81.3%</td></tr>
+                    <tr><td>Physics</td><td>85.2</td><td>95.9</td><td>9</td><td>7</td><td>77.8%</td></tr>
+                    <tr><td>Medicine</td><td>80.8</td><td>93.5</td><td>12</td><td>10</td><td>83.3%</td></tr>
+                    <tr><td>Info Sci.</td><td>72.3</td><td>86.6</td><td>14</td><td>9</td><td>64.3%</td></tr>
+                    <tr><td>Material</td><td>80.0</td><td>94.2</td><td>11</td><td>9</td><td>81.8%</td></tr>
+                    <tr class="ours"><td>Total / Avg</td><td>78.1</td><td>92.5</td><td>80</td><td>63</td><td>78.8%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
