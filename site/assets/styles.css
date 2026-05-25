@@ -210,8 +210,8 @@ nav a[aria-current="page"] {
 }
 
 .section > h2 {
-  width: min(1180px, 100%);
-  margin-inline: auto;
+  width: 100%;
+  margin-inline: 0;
   position: relative;
   margin-top: 0;
   margin-bottom: 28px;
@@ -236,8 +236,8 @@ nav a[aria-current="page"] {
 }
 
 .section-body {
-  width: min(1180px, 100%);
-  margin-inline: auto;
+  width: 100%;
+  margin-inline: 0;
   min-width: 0;
 }
 
