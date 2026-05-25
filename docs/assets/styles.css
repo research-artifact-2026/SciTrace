@@ -209,7 +209,12 @@ nav a[aria-current="page"] {
   background: var(--white);
 }
 
-.section > h2 {
+.section-inner {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+}
+
+.section-inner > h2 {
   width: 100%;
   margin-inline: 0;
   position: relative;
@@ -224,7 +229,7 @@ nav a[aria-current="page"] {
   border-bottom: 1px solid var(--line);
 }
 
-.section > h2::after {
+.section-inner > h2::after {
   content: "";
   position: absolute;
   bottom: -2px;
