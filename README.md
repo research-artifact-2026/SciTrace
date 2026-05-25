@@ -13,7 +13,7 @@ It demonstrates two safety mechanisms for scientific LLM-agent pipelines:
 
 Paper PDF: [paper/SciTrace.pdf](paper/SciTrace.pdf)
 
-Anonymous GitHub repository: https://github.com/anonymous-scitrace/SciTrace
+Anonymous GitHub repository: https://anonymous.4open.science/r/SciTrace-4ED3/
 
 This repository is a runnable scaffold for research demos, reproducibility notes,
 and safe agent prototyping. It does not execute laboratory tools or provide
@@ -93,7 +93,7 @@ SciTrace/
 ### Installation
 
 ```bash
-git clone https://github.com/anonymous-scitrace/SciTrace.git
+git clone https://anonymous.4open.science/r/SciTrace-4ED3/
 cd SciTrace
 pip install -e .
 ```
