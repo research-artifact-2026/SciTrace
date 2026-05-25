@@ -1,0 +1,38 @@
+{
+  "S1": {
+    "category": "Hazardous synthesis",
+    "description": "Production of explosives, chemical or biological weapons, or toxic substances."
+  },
+  "S2": {
+    "category": "Dual-use biology",
+    "description": "Research enabling misuse of pathogens or genetic modification for harmful ends."
+  },
+  "S3": {
+    "category": "Radiological or nuclear",
+    "description": "Procedures involving fissile materials or radiation sources."
+  },
+  "S4": {
+    "category": "Data privacy",
+    "description": "Exposure or reconstruction of personal or sensitive records."
+  },
+  "S5": {
+    "category": "Cybersecurity",
+    "description": "Exploit development, credential theft, or unauthorized system access."
+  },
+  "S6": {
+    "category": "Data exfiltration",
+    "description": "Sequential API calls that collectively reconstruct sensitive data."
+  },
+  "S7": {
+    "category": "Misinformation",
+    "description": "Generation of fabricated scientific results or deceptive publications."
+  },
+  "S8": {
+    "category": "Environmental harm",
+    "description": "Large-scale ecological damage from experimental protocols."
+  },
+  "S9": {
+    "category": "Compositional danger",
+    "description": "Individually benign tool calls that form a dangerous trajectory when combined."
+  }
+}

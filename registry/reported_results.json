@@ -1,0 +1,28 @@
+{
+  "paper": "SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents",
+  "benchmark": {
+    "name": "SciSafetyBench",
+    "high_risk_research_tasks": 240,
+    "tool_related_risk_tasks": 120,
+    "scientific_domains": [
+      "Physics",
+      "Chemistry",
+      "Biology",
+      "Material Science",
+      "Information Science",
+      "Medicine"
+    ],
+    "specialized_tools": 30
+  },
+  "headline_results": {
+    "tool_call_safety_gain_over_safescientist_pp": 14.3,
+    "average_adversarial_rejection_gain_pp": 24.7,
+    "compositional_tool_chain_escapes_detected_percent": 78.8
+  },
+  "ablation_qwen_2_5_72b": [
+    {"config": "SafeScientist", "safety": 4.75, "reject_rate": 87.0, "tool_safety": 78.1, "overall": 3.50},
+    {"config": "+SIR", "safety": 4.81, "reject_rate": 89.5, "tool_safety": 79.2, "overall": 3.58},
+    {"config": "+CTV", "safety": 4.78, "reject_rate": 86.8, "tool_safety": 89.7, "overall": 3.55},
+    {"config": "SciTrace", "safety": 4.89, "reject_rate": 93.0, "tool_safety": 92.5, "overall": 3.72}
+  ]
+}
