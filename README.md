@@ -132,20 +132,6 @@ python scripts/scitrace_framework.py taxonomy
 
 ---
 
-## Citation
-
-Citation information should be updated when the paper is published. For now:
-
-```bibtex
-@misc{scitrace2026,
-  title = {SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents},
-  author = {Anonymous ACL submission},
-  year = {2026},
-  note = {Preprint under review}
-}
-```
-
----
 
 ## License
 
