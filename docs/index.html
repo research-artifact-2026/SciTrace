@@ -172,29 +172,31 @@
             <div class="method-grid">
               <article>
                 <span>01</span>
-                <h3>Safety-Intrinsic Reasoning Loop</h3>
+                <h3>SciTrace Framework</h3>
                 <p>
-                  SIR performs joint task-and-safety reasoning at each stage. It
-                  receives the current stage content, retrieved safety checks, and
-                  the cumulative risk state, then emits a risk level and action.
+                  An intrinsic safety architecture for scientific LLM agents that
+                  propagates a cumulative risk state across all pipeline stages through
+                  joint task-and-safety reasoning.
                 </p>
               </article>
+
               <article>
                 <span>02</span>
-                <h3>Cumulative Risk State</h3>
+                <h3>Safety-Intrinsic Reasoning Loop (SIR)</h3>
                 <p>
-                  Signals are stored across the entire run with five levels:
-                  SAFE, LOW-RISK, WARNING, HIGH-RISK, and BLOCK. Interaction pairs
-                  can escalate risk when categories co-occur.
+                  A stage-aware reasoning module with five graduated risk levels and
+                  memory-based safety check retrieval, replacing independent per-stage
+                  filters.
                 </p>
               </article>
+
               <article>
                 <span>03</span>
-                <h3>Compositional Tool-Chain Verifier</h3>
+                <h3>Compositional Tool-Chain Verifier (CTV)</h3>
                 <p>
-                  CTV evaluates request harmfulness, compositional risk, and direct
-                  tool invocation safety in the context of the full tool history.
-                  It can allow, modify, or block a call.
+                  A trajectory-aware verifier that performs three-subtask safety analysis
+                  before tool execution and issues TS-Flow feedback to steer the agent
+                  toward a safe alternative.
                 </p>
               </article>
             </div>
