@@ -11,6 +11,7 @@
       <a class="brand" href="#top">SciTrace</a>
       <nav aria-label="Primary">
         <a href="#abstract">Abstract</a>
+        <a href="#benchmark">Benchmark</a>
         <a href="#method">Method</a>
         <a href="#experiments">Experiments</a>
       </nav>
@@ -74,6 +75,67 @@
               with a Compositional Tool-Chain Verifier (CTV), which performs
               trajectory-aware safety checks before execution.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="benchmark">
+        <div class="section-inner">
+          <h2>Benchmark</h2>
+          <div class="section-body">
+            <p>
+              We evaluate on SciSafetyBench, which contains 240 high-risk
+              scientific research tasks and 120 tool-related risk tasks spanning
+              30 specialized scientific tools. The tasks are evenly distributed
+              across six scientific domains: Physics, Chemistry, Biology,
+              Material Science, Information Science, and Medicine.
+            </p>
+            <p>
+              Each domain contributes 40 research tasks and 20 tool tasks. The
+              benchmark labels four risk types in equal proportion: intentional
+              malice, concealed harm, unintentional consequences, and intrinsic
+              execution hazards.
+            </p>
+
+            <div class="benchmark-layout">
+              <figure class="figure-block zoom-figure">
+                <button class="zoom-trigger" type="button" data-zoom-src="assets/benchmark-distribution.svg" data-zoom-alt="SciSafetyBench benchmark distribution visualization">
+                  <img src="assets/benchmark-distribution.svg" alt="SciSafetyBench benchmark distribution visualization">
+                </button>
+                <figcaption>
+                  SciSafetyBench task distribution: six domains, 240 research
+                  tasks, 120 tool tasks, and four equally represented risk types.
+                  Click the figure to zoom.
+                </figcaption>
+              </figure>
+
+              <div class="table-card benchmark-table">
+                <div class="table-title">
+                  <h3>SciSafetyBench Task Distribution</h3>
+                  <p>Adapted from the benchmark description in Section 4.1.</p>
+                </div>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr><th>Domain / Risk Type</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Physics</td><td>40</td><td>20</td></tr>
+                      <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
+                      <tr><td>Biology</td><td>40</td><td>20</td></tr>
+                      <tr><td>Material Science</td><td>40</td><td>20</td></tr>
+                      <tr><td>Information Science</td><td>40</td><td>20</td></tr>
+                      <tr><td>Medicine</td><td>40</td><td>20</td></tr>
+                      <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
+                      <tr><td>Intentional malice</td><td colspan="2">25%</td></tr>
+                      <tr><td>Concealed harm</td><td colspan="2">25%</td></tr>
+                      <tr><td>Unintentional consequences</td><td colspan="2">25%</td></tr>
+                      <tr><td>Intrinsic execution hazards</td><td colspan="2">25%</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -256,6 +318,11 @@
       </section>
 
     </main>
+
+    <div class="zoom-modal" id="zoom-modal" aria-hidden="true" role="dialog" aria-label="Expanded figure">
+      <button class="zoom-close" type="button" aria-label="Close expanded figure">Close</button>
+      <img src="" alt="">
+    </div>
 
     <script src="assets/app.js"></script>
   </body>
