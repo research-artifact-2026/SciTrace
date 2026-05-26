@@ -7,7 +7,18 @@ function syncPrimaryNav() {
   benchmarkLink?.toggleAttribute("aria-current", isBenchmark);
 }
 
-window.addEventListener("hashchange", syncPrimaryNav);
+function animateViewSwitch() {
+  document.body.classList.remove("view-switching");
+  window.requestAnimationFrame(() => {
+    document.body.classList.add("view-switching");
+    window.setTimeout(() => document.body.classList.remove("view-switching"), 340);
+  });
+}
+
+window.addEventListener("hashchange", () => {
+  syncPrimaryNav();
+  animateViewSwitch();
+});
 syncPrimaryNav();
 
 for (const zoomArea of document.querySelectorAll("[data-wheel-zoom]")) {

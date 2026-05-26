@@ -66,6 +66,10 @@ nav a[aria-current="page"] {
   color: var(--teal);
 }
 
+.page-view {
+  animation: view-enter 280ms ease both;
+}
+
 .benchmark-view {
   display: none;
 }
@@ -84,6 +88,42 @@ body:has(#benchmark:target) .topbar nav a[href="#paper"] {
 
 body:has(#benchmark:target) .topbar nav a[href="#benchmark"] {
   color: var(--teal);
+}
+
+body.view-switching .page-view {
+  animation-name: view-enter-soft;
+}
+
+@keyframes view-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes view-enter-soft {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-view {
+    animation: none;
+  }
 }
 
 .hero,
