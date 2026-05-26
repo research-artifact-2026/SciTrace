@@ -641,6 +641,21 @@ nav a[aria-current="page"] {
   min-width: 0;
 }
 
+.benchmark-tables {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: 18px;
+}
+
+.benchmark-tables .table-card {
+  height: 100%;
+}
+
+.benchmark-tables td:not(:first-child),
+.benchmark-tables th:not(:first-child) {
+  text-align: right;
+}
+
 @keyframes slice-in {
   from {
     opacity: 0;
@@ -857,6 +872,10 @@ tr.risk-row td:last-child {
   }
 
   .chart-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .benchmark-tables {
     grid-template-columns: 1fr;
   }
 
