@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SciTrace</title>
-    <link rel="stylesheet" href="assets/styles.css?v=7">
+    <link rel="stylesheet" href="assets/styles.css?v=8">
   </head>
   <body>
     <header class="topbar">
@@ -204,6 +204,111 @@
         </div>
       </section>
 
+      <section class="section benchmark-page" id="benchmark">
+        <div class="section-inner">
+          <h2>Benchmark</h2>
+          <div class="section-body">
+            <p>
+              We evaluate on SciSafetyBench, which contains 240 high-risk
+              scientific research tasks and 120 tool-related risk tasks spanning
+              30 specialized scientific tools. The tasks are evenly distributed
+              across six scientific domains: Physics, Chemistry, Biology,
+              Material Science, Information Science, and Medicine.
+            </p>
+            <p>
+              Each domain contributes 40 research tasks and 20 tool tasks. The
+              benchmark labels four risk types in equal proportion: intentional
+              malice, concealed harm, unintentional consequences, and intrinsic
+              execution hazards.
+            </p>
+
+            <div class="benchmark-layout benchmark-standalone">
+              <figure class="figure-block benchmark-chart-card" data-domain-chart>
+                <div class="chart-panel">
+                  <div class="chart-canvas wheel-zoom" data-wheel-zoom>
+                    <svg viewBox="0 0 420 420" role="img" aria-label="Dynamic SciSafetyBench domain distribution pie chart">
+                      <g class="domain-slices"></g>
+                      <circle class="chart-core" cx="210" cy="210" r="74"></circle>
+                      <text class="chart-core-title" x="210" y="198" text-anchor="middle">SciSafetyBench</text>
+                      <text class="chart-core-count" x="210" y="228" text-anchor="middle">360</text>
+                      <text class="chart-core-subtitle" x="210" y="250" text-anchor="middle">total tasks</text>
+                    </svg>
+                  </div>
+                  <div class="chart-info">
+                    <span class="chart-kicker">Interactive benchmark map</span>
+                    <h3 data-chart-domain>Six scientific domains</h3>
+                    <p data-chart-copy>
+                      Each domain contributes 40 high-risk research tasks and
+                      20 tool-related risk tasks.
+                    </p>
+                    <div class="chart-metrics">
+                      <div><b data-chart-total>60</b><span>tasks / domain</span></div>
+                      <div><b>25%</b><span>per risk type</span></div>
+                    </div>
+                    <div class="risk-bars" aria-label="Risk type proportions">
+                      <span style="--bar:#f4cf58">Intentional malice</span>
+                      <span style="--bar:#62c9d3">Concealed harm</span>
+                      <span style="--bar:#a6e0c7">Unintentional consequences</span>
+                      <span style="--bar:#ef8d86">Intrinsic execution hazards</span>
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  Dynamic view of SciSafetyBench: six equal domain slices,
+                  240 high-risk research tasks, 120 tool-related risk tasks,
+                  and four equally represented risk types.
+                </figcaption>
+              </figure>
+
+              <div class="benchmark-tables">
+                <div class="table-card benchmark-table">
+                  <div class="table-title">
+                    <h3>Domain Distribution</h3>
+                    <p>Each scientific domain contributes the same number of tasks.</p>
+                  </div>
+                  <div class="table-wrap">
+                    <table class="distribution-table">
+                      <thead>
+                        <tr><th>Domain</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Physics</td><td>40</td><td>20</td></tr>
+                        <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
+                        <tr><td>Biology</td><td>40</td><td>20</td></tr>
+                        <tr><td>Material Science</td><td>40</td><td>20</td></tr>
+                        <tr><td>Information Science</td><td>40</td><td>20</td></tr>
+                        <tr><td>Medicine</td><td>40</td><td>20</td></tr>
+                        <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="table-card benchmark-table">
+                  <div class="table-title">
+                    <h3>Risk Type Distribution</h3>
+                    <p>Risk labels are balanced across four categories.</p>
+                  </div>
+                  <div class="table-wrap">
+                    <table class="distribution-table">
+                      <thead>
+                        <tr><th>Risk Type</th><th>Share</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Intentional malice</td><td>25%</td></tr>
+                        <tr><td>Concealed harm</td><td>25%</td></tr>
+                        <tr><td>Unintentional consequences</td><td>25%</td></tr>
+                        <tr><td>Intrinsic execution hazards</td><td>25%</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="experiments">
         <div class="section-inner">
           <h2>Experiments</h2>
@@ -398,115 +503,8 @@
       </section> -->
       </div>
 
-      <div class="page-view benchmark-view" id="benchmark" hidden>
-        <section class="section benchmark-page">
-          <div class="section-inner">
-            <h2>Benchmark</h2>
-            <div class="section-body">
-              <p>
-                We evaluate on SciSafetyBench, which contains 240 high-risk
-                scientific research tasks and 120 tool-related risk tasks spanning
-                30 specialized scientific tools. The tasks are evenly distributed
-                across six scientific domains: Physics, Chemistry, Biology,
-                Material Science, Information Science, and Medicine.
-              </p>
-              <p>
-                Each domain contributes 40 research tasks and 20 tool tasks. The
-                benchmark labels four risk types in equal proportion: intentional
-                malice, concealed harm, unintentional consequences, and intrinsic
-                execution hazards.
-              </p>
-
-              <div class="benchmark-layout benchmark-standalone">
-                <figure class="figure-block benchmark-chart-card" data-domain-chart>
-                  <div class="chart-panel">
-                    <div class="chart-canvas wheel-zoom" data-wheel-zoom>
-                      <svg viewBox="0 0 420 420" role="img" aria-label="Dynamic SciSafetyBench domain distribution pie chart">
-                        <g class="domain-slices"></g>
-                        <circle class="chart-core" cx="210" cy="210" r="74"></circle>
-                        <text class="chart-core-title" x="210" y="198" text-anchor="middle">SciSafetyBench</text>
-                        <text class="chart-core-count" x="210" y="228" text-anchor="middle">360</text>
-                        <text class="chart-core-subtitle" x="210" y="250" text-anchor="middle">total tasks</text>
-                      </svg>
-                    </div>
-                    <div class="chart-info">
-                      <span class="chart-kicker">Interactive benchmark map</span>
-                      <h3 data-chart-domain>Six scientific domains</h3>
-                      <p data-chart-copy>
-                        Each domain contributes 40 high-risk research tasks and
-                        20 tool-related risk tasks.
-                      </p>
-                      <div class="chart-metrics">
-                        <div><b data-chart-total>60</b><span>tasks / domain</span></div>
-                        <div><b>25%</b><span>per risk type</span></div>
-                      </div>
-                      <div class="risk-bars" aria-label="Risk type proportions">
-                        <span style="--bar:#f4cf58">Intentional malice</span>
-                        <span style="--bar:#62c9d3">Concealed harm</span>
-                        <span style="--bar:#a6e0c7">Unintentional consequences</span>
-                        <span style="--bar:#ef8d86">Intrinsic execution hazards</span>
-                      </div>
-                    </div>
-                  </div>
-                  <figcaption>
-                    Dynamic view of SciSafetyBench: six equal domain slices,
-                    240 high-risk research tasks, 120 tool-related risk tasks,
-                    and four equally represented risk types.
-                  </figcaption>
-                </figure>
-
-                <div class="benchmark-tables">
-                  <div class="table-card benchmark-table">
-                    <div class="table-title">
-                      <h3>Domain Distribution</h3>
-                      <p>Each scientific domain contributes the same number of tasks.</p>
-                    </div>
-                    <div class="table-wrap">
-                      <table class="distribution-table">
-                        <thead>
-                          <tr><th>Domain</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td>Physics</td><td>40</td><td>20</td></tr>
-                          <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
-                          <tr><td>Biology</td><td>40</td><td>20</td></tr>
-                          <tr><td>Material Science</td><td>40</td><td>20</td></tr>
-                          <tr><td>Information Science</td><td>40</td><td>20</td></tr>
-                          <tr><td>Medicine</td><td>40</td><td>20</td></tr>
-                          <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-
-                  <div class="table-card benchmark-table">
-                    <div class="table-title">
-                      <h3>Risk Type Distribution</h3>
-                      <p>Risk labels are balanced across four categories.</p>
-                    </div>
-                    <div class="table-wrap">
-                      <table class="distribution-table">
-                        <thead>
-                          <tr><th>Risk Type</th><th>Share</th></tr>
-                        </thead>
-                        <tbody>
-                          <tr><td>Intentional malice</td><td>25%</td></tr>
-                          <tr><td>Concealed harm</td><td>25%</td></tr>
-                          <tr><td>Unintentional consequences</td><td>25%</td></tr>
-                          <tr><td>Intrinsic execution hazards</td><td>25%</td></tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
     </main>
 
-    <script src="assets/app.js?v=7"></script>
+    <script src="assets/app.js?v=8"></script>
   </body>
 </html>
