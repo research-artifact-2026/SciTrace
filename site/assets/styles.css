@@ -299,6 +299,10 @@ nav a[aria-current="page"] {
   background: var(--white);
 }
 
+.method-figure-stack img + img {
+  margin-top: 18px;
+}
+
 .figure-block figcaption {
   margin-top: 10px;
   color: var(--muted);

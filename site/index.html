@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SciTrace</title>
-    <link rel="stylesheet" href="assets/styles.css?v=8">
+    <link rel="stylesheet" href="assets/styles.css?v=9">
   </head>
   <body>
     <header class="topbar">
@@ -147,12 +147,14 @@
               and tool call, superseding independent per-stage filters whenever the
               intrinsic safety reasoning is active.
             </p>
-            <figure class="figure-block">
+            <figure class="figure-block method-figure-stack">
               <img src="assets/framework-figure-2.png" alt="Updated SciTrace framework from the paper">
+              <img src="assets/workflow-figure.png" alt="SciTrace workflow compared with baseline safety filtering">
               <figcaption>
-                Figure 2 from the paper: SciTrace couples SIR, cumulative risk
-                state tracking, CTV, and TS-Flow feedback to make safety intrinsic
-                across the scientific-agent trajectory.
+                Figure 2 from the paper: the framework couples SIR, cumulative
+                risk state tracking, CTV, and TS-Flow feedback, while the workflow
+                shows how SciTrace preserves safety context across the scientific-agent
+                trajectory.
               </figcaption>
             </figure>
 
