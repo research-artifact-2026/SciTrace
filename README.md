@@ -33,7 +33,6 @@ failure modes:
 SciTrace addresses these issues by integrating safety reasoning into each stage
 and by verifying tool-call trajectories before execution.
 
-![SciTrace project page preview](site/assets/scitrace-architecture.svg)
 
 ### Key Results Reported In The Paper
 
