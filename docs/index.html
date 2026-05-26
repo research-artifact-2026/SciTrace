@@ -4,55 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SciTrace</title>
-    <link rel="stylesheet" href="assets/styles.css?v=5">
+    <link rel="stylesheet" href="assets/styles.css?v=6">
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#top">SciTrace</a>
+      <a class="brand" href="#paper">SciTrace</a>
       <nav aria-label="Primary">
-        <a href="#abstract">Abstract</a>
+        <a href="#paper">Paper</a>
         <a href="#benchmark">Benchmark</a>
+        <a href="#abstract">Abstract</a>
         <a href="#method">Method</a>
         <a href="#experiments">Experiments</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero paper-hero">
-        <p class="venue">EMNLP 2026 Submission</p>
-        <h1>SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents</h1>
+      <div class="page-view paper-view" id="paper">
+        <section class="hero paper-hero">
+          <p class="venue">EMNLP 2026 Submission</p>
+          <h1>SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents</h1>
 
-        <div class="author-block" aria-label="Author placeholders">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="affiliation-line" aria-label="Affiliation placeholder"></div>
+          <div class="author-block" aria-label="Author placeholders">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="affiliation-line" aria-label="Affiliation placeholder"></div>
 
-        <div class="actions">
-          <a class="button primary" href="assets/SciTrace.pdf">Paper</a>
-          <a class="button" href="https://anonymous.4open.science/r/SciTrace-4ED3/">Anonymous GitHub</a>
-        </div>
+          <div class="actions">
+            <a class="button primary" href="assets/SciTrace.pdf">Paper</a>
+            <a class="button" href="https://anonymous.4open.science/r/SciTrace-4ED3/">Anonymous GitHub</a>
+          </div>
 
-        <div class="hero-summary">
-          <article>
-            <strong>240</strong>
-            <span>High-risk research tasks</span>
-          </article>
-          <article>
-            <strong>120</strong>
-            <span>Tool-related risk tasks</span>
-          </article>
-          <article>
-            <strong>+14.3 pp</strong>
-            <span>Tool safety gain</span>
-          </article>
-          <article>
-            <strong>78.8%</strong>
-            <span>Compositional escapes detected</span>
-          </article>
-        </div>
-      </section>
+          <div class="hero-summary">
+            <article>
+              <strong>240</strong>
+              <span>High-risk research tasks</span>
+            </article>
+            <article>
+              <strong>120</strong>
+              <span>Tool-related risk tasks</span>
+            </article>
+            <article>
+              <strong>+14.3 pp</strong>
+              <span>Tool safety gain</span>
+            </article>
+            <article>
+              <strong>78.8%</strong>
+              <span>Compositional escapes detected</span>
+            </article>
+          </div>
+        </section>
 
       <section class="section" id="abstract">
         <div class="section-inner">
@@ -75,67 +77,6 @@
               with a Compositional Tool-Chain Verifier (CTV), which performs
               trajectory-aware safety checks before execution.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="benchmark">
-        <div class="section-inner">
-          <h2>Benchmark</h2>
-          <div class="section-body">
-            <p>
-              We evaluate on SciSafetyBench, which contains 240 high-risk
-              scientific research tasks and 120 tool-related risk tasks spanning
-              30 specialized scientific tools. The tasks are evenly distributed
-              across six scientific domains: Physics, Chemistry, Biology,
-              Material Science, Information Science, and Medicine.
-            </p>
-            <p>
-              Each domain contributes 40 research tasks and 20 tool tasks. The
-              benchmark labels four risk types in equal proportion: intentional
-              malice, concealed harm, unintentional consequences, and intrinsic
-              execution hazards.
-            </p>
-
-            <div class="benchmark-layout">
-              <figure class="figure-block zoom-figure">
-                <button class="zoom-trigger" type="button" data-zoom-src="assets/benchmark-distribution.svg" data-zoom-alt="SciSafetyBench benchmark distribution visualization">
-                  <img src="assets/benchmark-distribution.svg" alt="SciSafetyBench benchmark distribution visualization">
-                </button>
-                <figcaption>
-                  SciSafetyBench task distribution: six domains, 240 research
-                  tasks, 120 tool tasks, and four equally represented risk types.
-                  Click the figure to zoom.
-                </figcaption>
-              </figure>
-
-              <div class="table-card benchmark-table">
-                <div class="table-title">
-                  <h3>SciSafetyBench Task Distribution</h3>
-                  <p>Adapted from the benchmark description in Section 4.1.</p>
-                </div>
-                <div class="table-wrap">
-                  <table>
-                    <thead>
-                      <tr><th>Domain / Risk Type</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
-                    </thead>
-                    <tbody>
-                      <tr><td>Physics</td><td>40</td><td>20</td></tr>
-                      <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
-                      <tr><td>Biology</td><td>40</td><td>20</td></tr>
-                      <tr><td>Material Science</td><td>40</td><td>20</td></tr>
-                      <tr><td>Information Science</td><td>40</td><td>20</td></tr>
-                      <tr><td>Medicine</td><td>40</td><td>20</td></tr>
-                      <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
-                      <tr><td>Intentional malice</td><td colspan="2">25%</td></tr>
-                      <tr><td>Concealed harm</td><td colspan="2">25%</td></tr>
-                      <tr><td>Unintentional consequences</td><td colspan="2">25%</td></tr>
-                      <tr><td>Intrinsic execution hazards</td><td colspan="2">25%</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -316,13 +257,76 @@
         </div>
         </div>
       </section>
+      </div>
+
+      <div class="page-view benchmark-view" id="benchmark" hidden>
+        <section class="section benchmark-page">
+          <div class="section-inner">
+            <h2>Benchmark</h2>
+            <div class="section-body">
+              <p>
+                We evaluate on SciSafetyBench, which contains 240 high-risk
+                scientific research tasks and 120 tool-related risk tasks spanning
+                30 specialized scientific tools. The tasks are evenly distributed
+                across six scientific domains: Physics, Chemistry, Biology,
+                Material Science, Information Science, and Medicine.
+              </p>
+              <p>
+                Each domain contributes 40 research tasks and 20 tool tasks. The
+                benchmark labels four risk types in equal proportion: intentional
+                malice, concealed harm, unintentional consequences, and intrinsic
+                execution hazards.
+              </p>
+
+              <div class="benchmark-layout benchmark-standalone">
+                <figure class="figure-block zoom-figure">
+                  <div class="wheel-zoom" data-wheel-zoom aria-label="Zoomable SciSafetyBench benchmark distribution figure">
+                    <img src="assets/benchmark-distribution.svg" alt="SciSafetyBench benchmark distribution visualization">
+                  </div>
+                  <figcaption>
+                    SciSafetyBench task distribution: six domains, 240 research
+                    tasks, 120 tool tasks, and four equally represented risk types.
+                    Use the mouse wheel or trackpad to zoom; drag to pan.
+                  </figcaption>
+                  <div class="zoom-toolbar">
+                    <button type="button" data-zoom-reset>Reset view</button>
+                    <span>Wheel zoom, drag pan</span>
+                  </div>
+                </figure>
+
+                <div class="table-card benchmark-table">
+                  <div class="table-title">
+                    <h3>SciSafetyBench Task Distribution</h3>
+                    <p>Adapted from the benchmark description in Section 4.1.</p>
+                  </div>
+                  <div class="table-wrap">
+                    <table>
+                      <thead>
+                        <tr><th>Domain / Risk Type</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Physics</td><td>40</td><td>20</td></tr>
+                        <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
+                        <tr><td>Biology</td><td>40</td><td>20</td></tr>
+                        <tr><td>Material Science</td><td>40</td><td>20</td></tr>
+                        <tr><td>Information Science</td><td>40</td><td>20</td></tr>
+                        <tr><td>Medicine</td><td>40</td><td>20</td></tr>
+                        <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
+                        <tr><td>Intentional malice</td><td colspan="2">25%</td></tr>
+                        <tr><td>Concealed harm</td><td colspan="2">25%</td></tr>
+                        <tr><td>Unintentional consequences</td><td colspan="2">25%</td></tr>
+                        <tr><td>Intrinsic execution hazards</td><td colspan="2">25%</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
     </main>
-
-    <div class="zoom-modal" id="zoom-modal" aria-hidden="true" role="dialog" aria-label="Expanded figure">
-      <button class="zoom-close" type="button" aria-label="Close expanded figure">Close</button>
-      <img src="" alt="">
-    </div>
 
     <script src="assets/app.js"></script>
   </body>

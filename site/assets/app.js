@@ -1,37 +1,109 @@
 const links = document.querySelectorAll('nav a[href^="#"]');
+const paperView = document.querySelector("#paper");
+const benchmarkView = document.querySelector("#benchmark");
+const paperAnchors = new Set(["", "#paper", "#abstract", "#method", "#experiments"]);
+
+function setActiveLink(hash) {
+  const activeHash = hash === "" ? "#paper" : hash;
+  for (const item of links) {
+    item.toggleAttribute("aria-current", item.getAttribute("href") === activeHash);
+  }
+}
+
+function showViewFromHash() {
+  const hash = window.location.hash || "#paper";
+  const isBenchmark = hash === "#benchmark";
+
+  if (paperView && benchmarkView) {
+    paperView.hidden = isBenchmark;
+    benchmarkView.hidden = !isBenchmark;
+  }
+
+  setActiveLink(hash);
+
+  if (paperAnchors.has(hash) && hash !== "#paper" && hash !== "") {
+    document.querySelector(hash)?.scrollIntoView({ block: "start" });
+  } else {
+    window.scrollTo(0, 0);
+  }
+}
+
+window.addEventListener("hashchange", showViewFromHash);
+showViewFromHash();
 
 for (const link of links) {
   link.addEventListener("click", () => {
-    for (const item of links) item.removeAttribute("aria-current");
-    link.setAttribute("aria-current", "page");
+    window.setTimeout(showViewFromHash, 0);
   });
 }
 
-const zoomModal = document.querySelector("#zoom-modal");
-const zoomImage = zoomModal?.querySelector("img");
-const zoomClose = zoomModal?.querySelector(".zoom-close");
+for (const zoomArea of document.querySelectorAll("[data-wheel-zoom]")) {
+  const image = zoomArea.querySelector("img");
+  const reset = zoomArea.parentElement?.querySelector("[data-zoom-reset]");
+  let scale = 1;
+  let panX = 0;
+  let panY = 0;
+  let pointerId = null;
+  let startX = 0;
+  let startY = 0;
+  let startPanX = 0;
+  let startPanY = 0;
 
-for (const trigger of document.querySelectorAll(".zoom-trigger")) {
-  trigger.addEventListener("click", () => {
-    if (!zoomModal || !zoomImage) return;
-    zoomImage.src = trigger.dataset.zoomSrc || "";
-    zoomImage.alt = trigger.dataset.zoomAlt || "";
-    zoomModal.classList.add("open");
-    zoomModal.setAttribute("aria-hidden", "false");
+  function render() {
+    if (!image) return;
+    image.style.setProperty("--zoom", scale.toFixed(3));
+    image.style.setProperty("--pan-x", `${panX}px`);
+    image.style.setProperty("--pan-y", `${panY}px`);
+  }
+
+  zoomArea.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    const previousScale = scale;
+    const delta = event.deltaY > 0 ? 0.9 : 1.1;
+    scale = Math.min(4, Math.max(0.75, scale * delta));
+
+    const rect = zoomArea.getBoundingClientRect();
+    const offsetX = event.clientX - rect.left - rect.width / 2;
+    const offsetY = event.clientY - rect.top - rect.height / 2;
+    const ratio = scale / previousScale;
+    panX = offsetX - (offsetX - panX) * ratio;
+    panY = offsetY - (offsetY - panY) * ratio;
+    render();
+  }, { passive: false });
+
+  zoomArea.addEventListener("pointerdown", (event) => {
+    pointerId = event.pointerId;
+    startX = event.clientX;
+    startY = event.clientY;
+    startPanX = panX;
+    startPanY = panY;
+    zoomArea.classList.add("dragging");
+    zoomArea.setPointerCapture(pointerId);
   });
-}
 
-function closeZoom() {
-  if (!zoomModal || !zoomImage) return;
-  zoomModal.classList.remove("open");
-  zoomModal.setAttribute("aria-hidden", "true");
-  zoomImage.src = "";
-}
+  zoomArea.addEventListener("pointermove", (event) => {
+    if (pointerId !== event.pointerId) return;
+    panX = startPanX + event.clientX - startX;
+    panY = startPanY + event.clientY - startY;
+    render();
+  });
 
-zoomClose?.addEventListener("click", closeZoom);
-zoomModal?.addEventListener("click", (event) => {
-  if (event.target === zoomModal) closeZoom();
-});
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeZoom();
-});
+  function endDrag(event) {
+    if (pointerId !== event.pointerId) return;
+    zoomArea.classList.remove("dragging");
+    zoomArea.releasePointerCapture(pointerId);
+    pointerId = null;
+  }
+
+  zoomArea.addEventListener("pointerup", endDrag);
+  zoomArea.addEventListener("pointercancel", endDrag);
+
+  reset?.addEventListener("click", () => {
+    scale = 1;
+    panX = 0;
+    panY = 0;
+    render();
+  });
+
+  render();
+}
