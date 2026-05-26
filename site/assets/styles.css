@@ -422,6 +422,10 @@ h3 {
   margin-bottom: 18px;
 }
 
+.experiment-table-main {
+  margin-top: 18px;
+}
+
 .note-grid b {
   display: block;
   margin-bottom: 8px;
@@ -437,6 +441,15 @@ h3 {
 
 .table-card {
   overflow: hidden;
+}
+
+.table-card-compact {
+  width: min(760px, 100%);
+  margin: 24px auto 0;
+}
+
+.table-2-card {
+  box-shadow: 0 18px 42px rgba(23, 32, 38, 0.06);
 }
 
 .table-title {
@@ -458,6 +471,10 @@ table {
   min-width: 640px;
   border-collapse: collapse;
   background: var(--white);
+}
+
+.distribution-table {
+  min-width: 0;
 }
 
 th,
@@ -484,6 +501,14 @@ tr.ours td {
   color: var(--teal-dark);
   background: #f0faf8;
   font-weight: 850;
+}
+
+tr.risk-row td:first-child {
+  color: var(--muted);
+}
+
+tr.risk-row td:last-child {
+  font-weight: 750;
 }
 
 @media (max-width: 980px) {

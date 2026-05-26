@@ -176,7 +176,34 @@
               </article>
             </div>
 
-          <div class="table-card">
+            <div class="table-card table-card-compact table-2-card">
+              <div class="table-title">
+                <h3>Table 2: SciSafetyBench Task Distribution</h3>
+                <p>240 research tasks and 120 tool-related risk tasks are evenly distributed across six scientific domains.</p>
+              </div>
+              <div class="table-wrap">
+                <table class="distribution-table">
+                  <thead>
+                    <tr><th>Domain / Risk Type</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Physics</td><td>40</td><td>20</td></tr>
+                    <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
+                    <tr><td>Biology</td><td>40</td><td>20</td></tr>
+                    <tr><td>Material Science</td><td>40</td><td>20</td></tr>
+                    <tr><td>Information Science</td><td>40</td><td>20</td></tr>
+                    <tr><td>Medicine</td><td>40</td><td>20</td></tr>
+                    <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
+                    <tr class="risk-row"><td>Intentional malice</td><td colspan="2">25%</td></tr>
+                    <tr class="risk-row"><td>Concealed harm</td><td colspan="2">25%</td></tr>
+                    <tr class="risk-row"><td>Unintentional consequences</td><td colspan="2">25%</td></tr>
+                    <tr class="risk-row"><td>Intrinsic execution hazards</td><td colspan="2">25%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          <div class="table-card experiment-table-main">
             <div class="table-title">
               <h3>Safety and Quality Across Backbone Models</h3>
               <p>Adapted from Table 3 in the paper.</p>
