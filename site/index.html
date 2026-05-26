@@ -176,28 +176,55 @@
               </article>
             </div>
 
-            <div class="table-card table-card-compact table-2-card">
+            <div class="table-card experiment-table-main">
               <div class="table-title">
-                <h3>Table 2: SciSafetyBench Task Distribution</h3>
-                <p>240 research tasks and 120 tool-related risk tasks are evenly distributed across six scientific domains.</p>
+                <h3>Table 2: Comparison with Baseline AI Scientist Frameworks on SciSafetyBench</h3>
+                <p>Quality metrics use a 1-5 scale; Safety is also 1-5 (GPT-4o judge). Reject Rate is reported as a percentage.</p>
               </div>
               <div class="table-wrap">
-                <table class="distribution-table">
+                <table class="framework-table">
                   <thead>
-                    <tr><th>Domain / Risk Type</th><th>Research Tasks</th><th>Tool Tasks</th></tr>
+                    <tr>
+                      <th>Model</th>
+                      <th>Method</th>
+                      <th>Reject Rate (%)</th>
+                      <th>Quality</th>
+                      <th>Clarity</th>
+                      <th>Pres.</th>
+                      <th>Contrib.</th>
+                      <th>Overall</th>
+                      <th>Safety</th>
+                    </tr>
                   </thead>
                   <tbody>
-                    <tr><td>Physics</td><td>40</td><td>20</td></tr>
-                    <tr><td>Chemistry</td><td>40</td><td>20</td></tr>
-                    <tr><td>Biology</td><td>40</td><td>20</td></tr>
-                    <tr><td>Material Science</td><td>40</td><td>20</td></tr>
-                    <tr><td>Information Science</td><td>40</td><td>20</td></tr>
-                    <tr><td>Medicine</td><td>40</td><td>20</td></tr>
-                    <tr class="ours"><td>Total</td><td>240</td><td>120</td></tr>
-                    <tr class="risk-row"><td>Intentional malice</td><td colspan="2">25%</td></tr>
-                    <tr class="risk-row"><td>Concealed harm</td><td colspan="2">25%</td></tr>
-                    <tr class="risk-row"><td>Unintentional consequences</td><td colspan="2">25%</td></tr>
-                    <tr class="risk-row"><td>Intrinsic execution hazards</td><td colspan="2">25%</td></tr>
+                    <tr><td>Llama-3.1-70B</td><td>AI Scientist</td><td>0</td><td>1.85</td><td>1.90</td><td>1.90</td><td>1.90</td><td>3.20</td><td>2.45</td></tr>
+                    <tr><td></td><td>CycleResearcher</td><td>8</td><td>1.98</td><td>2.05</td><td>2.02</td><td>1.93</td><td>3.28</td><td>2.53</td></tr>
+                    <tr><td></td><td>ResearchTown</td><td>3</td><td>1.92</td><td>1.97</td><td>1.95</td><td>1.88</td><td>3.17</td><td>2.40</td></tr>
+                    <tr><td></td><td>AI Co-Scientist</td><td>12</td><td>2.05</td><td>2.18</td><td>2.12</td><td>2.02</td><td>3.38</td><td>2.68</td></tr>
+                    <tr><td></td><td>Agent Laboratory</td><td>15</td><td>2.00</td><td>2.47</td><td>2.47</td><td>1.94</td><td>3.18</td><td>2.45</td></tr>
+                    <tr><td></td><td>SafeScientist</td><td>85</td><td>2.00</td><td>2.48</td><td>2.50</td><td>1.98</td><td>3.47</td><td>4.72</td></tr>
+                    <tr class="ours"><td></td><td>SciTrace (ours)</td><td>92</td><td>2.12</td><td>2.62</td><td>2.58</td><td>2.10</td><td>3.68</td><td>4.87</td></tr>
+                    <tr><td>Qwen2.5-72B</td><td>AI Scientist</td><td>0</td><td>1.88</td><td>1.93</td><td>1.92</td><td>1.92</td><td>3.25</td><td>2.48</td></tr>
+                    <tr><td></td><td>CycleResearcher</td><td>10</td><td>2.00</td><td>2.08</td><td>2.05</td><td>1.95</td><td>3.30</td><td>2.57</td></tr>
+                    <tr><td></td><td>ResearchTown</td><td>5</td><td>1.95</td><td>2.00</td><td>1.98</td><td>1.90</td><td>3.20</td><td>2.43</td></tr>
+                    <tr><td></td><td>AI Co-Scientist</td><td>15</td><td>2.08</td><td>2.22</td><td>2.15</td><td>2.05</td><td>3.42</td><td>2.72</td></tr>
+                    <tr><td></td><td>Agent Laboratory</td><td>18</td><td>2.02</td><td>2.50</td><td>2.50</td><td>1.97</td><td>3.22</td><td>2.50</td></tr>
+                    <tr><td></td><td>SafeScientist</td><td>87</td><td>2.02</td><td>2.50</td><td>2.52</td><td>2.00</td><td>3.50</td><td>4.75</td></tr>
+                    <tr class="ours"><td></td><td>SciTrace (ours)</td><td>93</td><td>2.15</td><td>2.65</td><td>2.62</td><td>2.12</td><td>3.72</td><td>4.89</td></tr>
+                    <tr><td>DeepSeek-V3</td><td>AI Scientist</td><td>2</td><td>1.90</td><td>1.95</td><td>1.95</td><td>1.93</td><td>3.28</td><td>2.50</td></tr>
+                    <tr><td></td><td>CycleResearcher</td><td>10</td><td>2.02</td><td>2.10</td><td>2.08</td><td>1.97</td><td>3.32</td><td>2.60</td></tr>
+                    <tr><td></td><td>ResearchTown</td><td>5</td><td>1.97</td><td>2.02</td><td>2.00</td><td>1.92</td><td>3.22</td><td>2.45</td></tr>
+                    <tr><td></td><td>AI Co-Scientist</td><td>17</td><td>2.10</td><td>2.25</td><td>2.18</td><td>2.08</td><td>3.45</td><td>2.75</td></tr>
+                    <tr><td></td><td>Agent Laboratory</td><td>20</td><td>2.05</td><td>2.52</td><td>2.52</td><td>1.98</td><td>3.25</td><td>2.52</td></tr>
+                    <tr><td></td><td>SafeScientist</td><td>88</td><td>2.05</td><td>2.52</td><td>2.55</td><td>2.02</td><td>3.52</td><td>4.78</td></tr>
+                    <tr class="ours"><td></td><td>SciTrace (ours)</td><td>94</td><td>2.18</td><td>2.68</td><td>2.65</td><td>2.15</td><td>3.75</td><td>4.91</td></tr>
+                    <tr><td>GPT-4o</td><td>AI Scientist</td><td>0</td><td>2.00</td><td>2.10</td><td>2.05</td><td>2.00</td><td>3.40</td><td>2.60</td></tr>
+                    <tr><td></td><td>CycleResearcher</td><td>12</td><td>2.12</td><td>2.22</td><td>2.18</td><td>2.05</td><td>3.45</td><td>2.72</td></tr>
+                    <tr><td></td><td>ResearchTown</td><td>5</td><td>2.05</td><td>2.12</td><td>2.10</td><td>2.00</td><td>3.35</td><td>2.55</td></tr>
+                    <tr><td></td><td>AI Co-Scientist</td><td>20</td><td>2.18</td><td>2.35</td><td>2.28</td><td>2.12</td><td>3.55</td><td>2.85</td></tr>
+                    <tr><td></td><td>Agent Laboratory</td><td>22</td><td>2.12</td><td>2.60</td><td>2.60</td><td>2.05</td><td>3.35</td><td>2.58</td></tr>
+                    <tr><td></td><td>SafeScientist</td><td>90</td><td>2.10</td><td>2.62</td><td>2.65</td><td>2.10</td><td>3.62</td><td>4.83</td></tr>
+                    <tr class="ours"><td></td><td>SciTrace (ours)</td><td>95</td><td>2.22</td><td>2.75</td><td>2.72</td><td>2.20</td><td>3.82</td><td>4.93</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -205,8 +232,8 @@
 
           <div class="table-card experiment-table-main">
             <div class="table-title">
-              <h3>Safety and Quality Across Backbone Models</h3>
-              <p>Adapted from Table 3 in the paper.</p>
+              <h3>Table 3: Safety and Quality Comparison Across Backbone Models</h3>
+              <p>SciTrace improves Safety Score, Reject Rate, and Tool Call Safety Rate over SafeScientist across all four models.</p>
             </div>
             <div class="table-wrap">
               <table>
@@ -243,8 +270,8 @@
           <div class="table-grid">
             <div class="table-card">
               <div class="table-title">
-                <h3>Component Ablation</h3>
-                <p>Qwen2.5-72B, adapted from Table 4(a).</p>
+                <h3>Table 4(a): Component Ablation</h3>
+                <p>Qwen2.5-72B; SIR and CTV contribute independently, and the combination is best.</p>
               </div>
               <div class="table-wrap">
                 <table>
@@ -263,8 +290,8 @@
 
             <div class="table-card">
               <div class="table-title">
-                <h3>Per-Domain Tool Safety</h3>
-                <p>Qwen2.5-72B, adapted from Table 5.</p>
+                <h3>Table 5: Per-Domain Analysis on Qwen2.5-72B</h3>
+                <p>SafeSci denotes SafeScientist. Esc., Det., and Rate denote compositional escapes, detected cases, and detection rate.</p>
               </div>
               <div class="table-wrap">
                 <table>

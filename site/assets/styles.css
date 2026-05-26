@@ -477,6 +477,20 @@ table {
   min-width: 0;
 }
 
+.framework-table {
+  min-width: 920px;
+}
+
+.framework-table td:first-child:not(:empty) {
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.framework-table td:nth-child(n+3),
+.framework-table th:nth-child(n+3) {
+  text-align: right;
+}
+
 th,
 td {
   padding: 10px 12px;
