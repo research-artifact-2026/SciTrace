@@ -66,10 +66,6 @@ nav a[aria-current="page"] {
   color: var(--teal);
 }
 
-.page-view[hidden] {
-  display: none;
-}
-
 .hero,
 .section {
   padding-inline: clamp(20px, 5vw, 72px);
@@ -137,6 +133,28 @@ nav a[aria-current="page"] {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+
+.paper-nav {
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.paper-nav a {
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.paper-nav a:hover {
+  border-color: var(--teal);
+  color: var(--teal);
 }
 
 .button {

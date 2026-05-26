@@ -1,41 +1,15 @@
-const links = document.querySelectorAll('nav a[href^="#"]');
-const paperView = document.querySelector("#paper");
-const benchmarkView = document.querySelector("#benchmark");
-const paperAnchors = new Set(["", "#paper", "#abstract", "#method", "#experiments"]);
+const primaryLinks = document.querySelectorAll('.topbar nav a[href^="#"]');
 
-function setActiveLink(hash) {
-  const activeHash = hash === "" ? "#paper" : hash;
-  for (const item of links) {
+function setActivePrimaryLink() {
+  const hash = window.location.hash || "#paper";
+  const activeHash = hash === "#benchmark" ? "#benchmark" : "#paper";
+  for (const item of primaryLinks) {
     item.toggleAttribute("aria-current", item.getAttribute("href") === activeHash);
   }
 }
 
-function showViewFromHash() {
-  const hash = window.location.hash || "#paper";
-  const isBenchmark = hash === "#benchmark";
-
-  if (paperView && benchmarkView) {
-    paperView.hidden = isBenchmark;
-    benchmarkView.hidden = !isBenchmark;
-  }
-
-  setActiveLink(hash);
-
-  if (paperAnchors.has(hash) && hash !== "#paper" && hash !== "") {
-    document.querySelector(hash)?.scrollIntoView({ block: "start" });
-  } else {
-    window.scrollTo(0, 0);
-  }
-}
-
-window.addEventListener("hashchange", showViewFromHash);
-showViewFromHash();
-
-for (const link of links) {
-  link.addEventListener("click", () => {
-    window.setTimeout(showViewFromHash, 0);
-  });
-}
+window.addEventListener("hashchange", setActivePrimaryLink);
+setActivePrimaryLink();
 
 for (const zoomArea of document.querySelectorAll("[data-wheel-zoom]")) {
   const image = zoomArea.querySelector("img");
