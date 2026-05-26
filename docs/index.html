@@ -16,7 +16,7 @@
     </header>
 
     <main id="top">
-      <div class="page-view paper-view" id="paper">
+      <div class="page-view paper-view is-visible" id="paper">
         <section class="hero paper-hero">
           <p class="venue">EMNLP 2026 Submission</p>
           <h1>SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents</h1>
@@ -34,9 +34,11 @@
           </div>
 
           <nav class="paper-nav" aria-label="Paper sections">
+            <a href="#highlights">Highlights</a>
             <a href="#abstract">Abstract</a>
             <a href="#method">Method</a>
             <a href="#experiments">Experiments</a>
+            <a href="#citation">Citation</a>
           </nav>
 
           <div class="hero-summary">
@@ -56,6 +58,49 @@
               <strong>78.8%</strong>
               <span>Compositional escapes detected</span>
             </article>
+          </div>
+        </section>
+
+        <section class="section compact-section" id="highlights">
+          <div class="section-inner">
+            <h2>Highlights</h2>
+            <div class="section-body">
+              <div class="highlight-grid">
+                <article>
+                  <span>Problem</span>
+                  <h3>Safety signals disappear between stages.</h3>
+                  <p>
+                    Scientific agents reason through idea generation, experiment
+                    design, writing, and review, but conventional filters inspect
+                    isolated outputs instead of preserving risk context.
+                  </p>
+                </article>
+                <article>
+                  <span>Approach</span>
+                  <h3>Make safety part of the agent trajectory.</h3>
+                  <p>
+                    SciTrace couples a Safety-Intrinsic Reasoning Loop with a
+                    Compositional Tool-Chain Verifier so warnings and tool histories
+                    persist across the full pipeline.
+                  </p>
+                </article>
+                <article>
+                  <span>Result</span>
+                  <h3>Higher tool safety without quality loss.</h3>
+                  <p>
+                    Across four backbone models, SciTrace improves safety and tool
+                    call safety while maintaining competitive scientific output
+                    quality and clarity.
+                  </p>
+                </article>
+              </div>
+              <div class="resource-strip" aria-label="Project resources">
+                <a href="assets/SciTrace.pdf">Paper PDF</a>
+                <a href="https://anonymous.4open.science/r/SciTrace-4ED3/">Anonymous GitHub</a>
+                <a href="#benchmark">Benchmark View</a>
+                <a href="#experiments">Experimental Tables</a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -311,12 +356,34 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section compact-section" id="citation">
+        <div class="section-inner">
+          <h2>Citation</h2>
+          <div class="section-body">
+            <p>
+              Author and affiliation fields are intentionally anonymized for
+              double-blind review. Replace them with the camera-ready metadata
+              after review.
+            </p>
+            <div class="citation-card">
+              <button class="button copy-button" type="button" data-copy-target="#bibtex">Copy BibTeX</button>
+              <pre id="bibtex"><code>@inproceedings{anonymous2026scitrace,
+  title = {SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents},
+  author = {Anonymous Authors},
+  booktitle = {Anonymous Submission},
+  year = {2026}
+}</code></pre>
+            </div>
+          </div>
         </div>
       </section>
       </div>
 
-      <div class="page-view benchmark-view" id="benchmark">
+      <div class="page-view benchmark-view" id="benchmark" hidden>
         <section class="section benchmark-page">
           <div class="section-inner">
             <h2>Benchmark</h2>
