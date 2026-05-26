@@ -1,15 +1,14 @@
-const primaryLinks = document.querySelectorAll('.topbar nav a[href^="#"]');
+const paperLink = document.querySelector('.topbar nav a[href="#paper"]');
+const benchmarkLink = document.querySelector('.topbar nav a[href="#benchmark"]');
 
-function setActivePrimaryLink() {
-  const hash = window.location.hash || "#paper";
-  const activeHash = hash === "#benchmark" ? "#benchmark" : "#paper";
-  for (const item of primaryLinks) {
-    item.toggleAttribute("aria-current", item.getAttribute("href") === activeHash);
-  }
+function syncPrimaryNav() {
+  const isBenchmark = window.location.hash === "#benchmark";
+  paperLink?.toggleAttribute("aria-current", !isBenchmark);
+  benchmarkLink?.toggleAttribute("aria-current", isBenchmark);
 }
 
-window.addEventListener("hashchange", setActivePrimaryLink);
-setActivePrimaryLink();
+window.addEventListener("hashchange", syncPrimaryNav);
+syncPrimaryNav();
 
 for (const zoomArea of document.querySelectorAll("[data-wheel-zoom]")) {
   const image = zoomArea.querySelector("img");

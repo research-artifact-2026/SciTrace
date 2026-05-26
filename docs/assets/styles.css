@@ -66,6 +66,26 @@ nav a[aria-current="page"] {
   color: var(--teal);
 }
 
+.benchmark-view {
+  display: none;
+}
+
+body:has(#benchmark:target) .paper-view {
+  display: none;
+}
+
+body:has(#benchmark:target) .benchmark-view {
+  display: block;
+}
+
+body:has(#benchmark:target) .topbar nav a[href="#paper"] {
+  color: var(--muted);
+}
+
+body:has(#benchmark:target) .topbar nav a[href="#benchmark"] {
+  color: var(--teal);
+}
+
 .hero,
 .section {
   padding-inline: clamp(20px, 5vw, 72px);

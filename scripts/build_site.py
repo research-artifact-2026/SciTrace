@@ -11,7 +11,12 @@ from pathlib import Path
 
 def main() -> int:
     site = Path("site")
-    required = [site / "index.html", site / "assets" / "styles.css", site / "assets" / "app.js"]
+    required = [
+        site / "index.html",
+        site / "assets" / "styles.css",
+        site / "assets" / "app.js",
+        site / "assets" / "benchmark-distribution.svg",
+    ]
     missing = [str(path) for path in required if not path.exists()]
     if missing:
         raise SystemExit(f"missing site files: {', '.join(missing)}")
