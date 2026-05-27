@@ -1,6 +1,6 @@
 # SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents
 
-> EMNLP 2026 Submission | [Paper](https://anonymous.4open.science/w/SciTrace-4ED3/)
+> EMNLP 2026 Submission
 
 ## Overview
 

@@ -20,7 +20,7 @@ const benchmarkDomains = [
   { name: "Physics", color: "#f8dc78" },
   { name: "Medicine", color: "#ffe997" },
   { name: "Chemistry", color: "#d3efbf" },
-  { name: "Material Science", color: "#aee9dc" },
+  { name: "Material", color: "#aee9dc" },
   { name: "Biology", color: "#bdd7fb" },
   { name: "Information Science", color: "#c9d2ff" },
 ];
