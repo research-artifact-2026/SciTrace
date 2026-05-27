@@ -1,0 +1,36 @@
+{
+  "table": "Table 6",
+  "title": "Discussion attacker/defense rejection rate (%), Qwen2.5-72B",
+  "rows": [
+    {
+      "attack_strategy": "Role-play Override",
+      "safescientist": 42.5,
+      "scitrace": 68.3
+    },
+    {
+      "attack_strategy": "Gradual Persuasion",
+      "safescientist": 38.7,
+      "scitrace": 64.8
+    },
+    {
+      "attack_strategy": "Authority Invocation",
+      "safescientist": 44.2,
+      "scitrace": 70.1
+    },
+    {
+      "attack_strategy": "Incremental Escalation",
+      "safescientist": 36.4,
+      "scitrace": 62.5
+    },
+    {
+      "attack_strategy": "Collaborative Deception",
+      "safescientist": 33.8,
+      "scitrace": 60.2
+    },
+    {
+      "attack_strategy": "Average",
+      "safescientist": 39.1,
+      "scitrace": 65.2
+    }
+  ]
+}

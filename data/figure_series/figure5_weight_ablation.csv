@@ -1,0 +1,5 @@
+setting,w1,w2,w3,tool_safety,reject_rate,quality
+Default,0.4,0.4,r_tool,92.5,93.0,3.72
+Uniform,0.33,0.33,0.33,89.4,91.2,3.69
+No comp. risk,0.6,0.0,0.4,86.0,88.7,3.74
+High comp. risk,0.3,0.6,0.1,93.1,93.8,3.7

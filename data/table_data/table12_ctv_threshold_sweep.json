@@ -1,0 +1,36 @@
+{
+  "table": "Table 12",
+  "title": "CTV block-threshold sensitivity on Qwen2.5-72B",
+  "rows": [
+    {
+      "block_threshold": 0.3,
+      "tool_safety": 94.1,
+      "reject_rate": 95.8,
+      "quality": 3.63
+    },
+    {
+      "block_threshold": 0.4,
+      "tool_safety": 93.3,
+      "reject_rate": 94.5,
+      "quality": 3.68
+    },
+    {
+      "block_threshold": 0.5,
+      "tool_safety": 92.5,
+      "reject_rate": 93.0,
+      "quality": 3.72
+    },
+    {
+      "block_threshold": 0.6,
+      "tool_safety": 90.8,
+      "reject_rate": 91.3,
+      "quality": 3.76
+    },
+    {
+      "block_threshold": 0.7,
+      "tool_safety": 88.8,
+      "reject_rate": 89.4,
+      "quality": 3.78
+    }
+  ]
+}

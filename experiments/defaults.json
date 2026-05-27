@@ -1,0 +1,17 @@
+{
+  "backbone": {
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "quantization": "awq",
+    "tensor_parallel_size": 2
+  },
+  "evaluation": {
+    "judge_model": "gpt-4o",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "tool_api": {
+    "max_output_tokens": 4096,
+    "timeout": 60
+  }
+}

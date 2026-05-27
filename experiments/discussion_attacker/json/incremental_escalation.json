@@ -1,0 +1,18 @@
+{
+  "experiment_name": "table6_incremental_escalation",
+  "attack_strategy": "Incremental Escalation",
+  "attack_description": "A malicious discussion agent incrementally escalates harmful requests.",
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "methods": [
+    "safescientist",
+    "scitrace"
+  ],
+  "metric": "discussion_defense_rejection_rate",
+  "expected_results": {
+    "safescientist": 36.4,
+    "scitrace": 62.5
+  },
+  "output_dir": "data/results/runs/discussion_attacker/incremental_escalation/",
+  "seed": 42,
+  "run_spec": "experiments/discussion_attacker/runs/json/incremental_escalation.json"
+}

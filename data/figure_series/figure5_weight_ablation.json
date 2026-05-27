@@ -1,0 +1,43 @@
+{
+  "figure": "Figure 5",
+  "source_table": "Table 13",
+  "model": "Qwen2.5-72B",
+  "data": [
+    {
+      "setting": "Default",
+      "w1": 0.4,
+      "w2": 0.4,
+      "w3": "r_tool",
+      "tool_safety": 92.5,
+      "reject_rate": 93.0,
+      "quality": 3.72
+    },
+    {
+      "setting": "Uniform",
+      "w1": 0.33,
+      "w2": 0.33,
+      "w3": 0.33,
+      "tool_safety": 89.4,
+      "reject_rate": 91.2,
+      "quality": 3.69
+    },
+    {
+      "setting": "No comp. risk",
+      "w1": 0.6,
+      "w2": 0.0,
+      "w3": 0.4,
+      "tool_safety": 86.0,
+      "reject_rate": 88.7,
+      "quality": 3.74
+    },
+    {
+      "setting": "High comp. risk",
+      "w1": 0.3,
+      "w2": 0.6,
+      "w3": 0.1,
+      "tool_safety": 93.1,
+      "reject_rate": 93.8,
+      "quality": 3.7
+    }
+  ]
+}

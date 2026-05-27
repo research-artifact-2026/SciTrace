@@ -1,0 +1,27 @@
+{
+  "experiment_name": "table7_dan_attack",
+  "attack_type": "DAN",
+  "attack_description": "Do Anything Now jailbreak-style query injection.",
+  "models": [
+    "Llama-3.1-70B",
+    "GPT-4o"
+  ],
+  "methods": [
+    "safescientist",
+    "scitrace"
+  ],
+  "metric": "rejection_rate",
+  "expected_results": {
+    "Llama-3.1-70B": {
+      "safescientist": 41.2,
+      "scitrace": 69.4
+    },
+    "GPT-4o": {
+      "safescientist": 49.7,
+      "scitrace": 76.8
+    }
+  },
+  "output_dir": "data/results/runs/adversarial/dan_attack/",
+  "seed": 42,
+  "run_spec": "experiments/adversarial/runs/json/dan_attack.json"
+}

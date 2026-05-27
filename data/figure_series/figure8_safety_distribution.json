@@ -1,0 +1,37 @@
+{
+  "figure": "Figure 8",
+  "note": "Per-score histogram bins are defined in the paper LaTeX; not in aggregate result tables.",
+  "model": "Qwen2.5-72B",
+  "summary_from_table_2": [
+    {
+      "model": "Qwen2.5-72B",
+      "method": "Bare LLM",
+      "safety_score": 2.38,
+      "reject_rate": 0.0,
+      "tool_safety": 40.2,
+      "quality": 1.8,
+      "clarity": 1.85,
+      "overall": 3.15
+    },
+    {
+      "model": "Qwen2.5-72B",
+      "method": "SafeScientist",
+      "safety_score": 4.75,
+      "reject_rate": 87.0,
+      "tool_safety": 78.1,
+      "quality": 2.02,
+      "clarity": 2.5,
+      "overall": 3.5
+    },
+    {
+      "model": "Qwen2.5-72B",
+      "method": "SciTrace",
+      "safety_score": 4.89,
+      "reject_rate": 93.0,
+      "tool_safety": 92.5,
+      "quality": 2.15,
+      "clarity": 2.65,
+      "overall": 3.72
+    }
+  ]
+}

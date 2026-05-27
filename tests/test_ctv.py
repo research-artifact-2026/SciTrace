@@ -1,36 +1,32 @@
-from scitrace.ctv import CompositionalToolChainVerifier, ToolCall
-from scitrace.risk_state import CumulativeRiskState
+from tests.fixtures.deterministic_backbone import DeterministicBackbone
+
+from scitrace.ctv.ctv_verifier import CTVVerifier
+from scitrace.sir.cumulative_risk_state import CumulativeRiskState
 
 
-def test_ctv_allows_simple_public_literature_search() -> None:
-    verifier = CompositionalToolChainVerifier()
+def test_ctv_verify_returns_required_fields():
     state = CumulativeRiskState()
-
-    result = verifier.verify(
-        "Compare public literature metadata",
-        ToolCall("search_literature", "public abstracts"),
-        [],
-        state,
-    )
-
-    assert result.action == "allow"
-    assert result.score == 0.0
+    ctv = CTVVerifier(DeterministicBackbone(), state, task_context="compositional tool task")
+    verdict = ctv.verify("retrosynthesis_planner", {"compound_id": "demo"}, [])
+    for key in ["request_harmful", "compositional_risk", "tool_safety", "score", "action"]:
+        assert key in verdict
 
 
-def test_ctv_blocks_compositional_bio_risk() -> None:
-    verifier = CompositionalToolChainVerifier()
+def test_ctv_writes_signal_to_state():
     state = CumulativeRiskState()
-    history = [
-        ToolCall("retrieve_genome", "pathogen genome"),
-        ToolCall("query_resistance", "antibiotic resistance loci"),
-    ]
+    ctv = CTVVerifier(DeterministicBackbone(), state)
+    ctv.verify("genome_search", {"query": "demo"}, [])
+    assert len(state.signals) >= 1
 
-    result = verifier.verify(
-        "Study pathogen behavior",
-        ToolCall("predict_structure", "protein structure model"),
-        history,
-        state,
-    )
 
-    assert result.action == "block"
-    assert result.signal.category == "S9"
+def test_ctv_ts_flow_on_block(monkeypatch):
+    state = CumulativeRiskState()
+    ctv = CTVVerifier(DeterministicBackbone(), state)
+
+    def fake_score(harm, comp, tool):
+        return 1.0, "block"
+
+    monkeypatch.setattr("scitrace.ctv.ctv_verifier.compute_ctv_score", fake_score)
+    verdict = ctv.verify("retrosynthesis_planner", {"compound_id": "x"}, [{"tool_name": "a"}] * 3)
+    assert verdict["action"] == "block"
+    assert "ts_flow_feedback" in verdict

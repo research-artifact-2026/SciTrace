@@ -1,0 +1,27 @@
+{
+  "experiment_name": "table7_malicious_agent_attack",
+  "attack_type": "M.Agt",
+  "attack_description": "Malicious discussion agent steering a multi-agent deliberation.",
+  "models": [
+    "Llama-3.1-70B",
+    "GPT-4o"
+  ],
+  "methods": [
+    "safescientist",
+    "scitrace"
+  ],
+  "metric": "rejection_rate",
+  "expected_results": {
+    "Llama-3.1-70B": {
+      "safescientist": 31.2,
+      "scitrace": 68.5
+    },
+    "GPT-4o": {
+      "safescientist": 38.7,
+      "scitrace": 74.2
+    }
+  },
+  "output_dir": "data/results/runs/adversarial/malicious_agent_attack/",
+  "seed": 42,
+  "run_spec": "experiments/adversarial/runs/json/malicious_agent_attack.json"
+}

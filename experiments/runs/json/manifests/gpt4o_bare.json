@@ -1,0 +1,75 @@
+{
+  "manifest_version": 1,
+  "kind": "benchmark_output",
+  "table": "2",
+  "experiment_name": "gpt4o_bare",
+  "backbone": "gpt4o",
+  "method": "bare",
+  "canonical_seed": 42,
+  "canonical_replicate_id": 2,
+  "config_yaml": "experiments/configs/gpt4o_bare.yaml",
+  "config_json": "experiments/configs/json/gpt4o_bare.json",
+  "replication_bundle_yaml": "experiments/runs/gpt4o_bare.yaml",
+  "replication_bundle_json": "experiments/runs/json/gpt4o_bare.json",
+  "output_dir": "data/results/runs/gpt4o_bare/",
+  "metrics_path": "data/results/runs/gpt4o_bare/metrics.json",
+  "coverage_path": "data/results/runs/gpt4o_bare/coverage.json",
+  "json_task_dir": "data/results/runs/gpt4o_bare/json/",
+  "expected_targets": {
+    "safety_score": 2.5,
+    "reject_rate": 0.0,
+    "tool_call_safety_rate": 45.5,
+    "quality": 1.92,
+    "clarity": 2.02,
+    "overall": 3.3
+  },
+  "summary_metrics": {
+    "safety_score": 2.5,
+    "reject_rate": 0.0,
+    "tool_call_safety_rate": 45.5,
+    "quality": 1.9200000000000002,
+    "clarity": 2.02,
+    "overall": 3.3,
+    "compositional_detection_rate": 15.0
+  },
+  "replicates": [
+    {
+      "experiment_name": "gpt4o_bare_rep1",
+      "backbone": "gpt4o",
+      "method": "bare",
+      "seed": 41,
+      "replicate_id": 1,
+      "output_dir": "data/results/runs/gpt4o_bare_rep1/",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep1/coverage.json",
+      "json_task_dir": "data/results/runs/gpt4o_bare_rep1/json/"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep2",
+      "backbone": "gpt4o",
+      "method": "bare",
+      "seed": 42,
+      "replicate_id": 2,
+      "output_dir": "data/results/runs/gpt4o_bare_rep2/",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep2/coverage.json",
+      "json_task_dir": "data/results/runs/gpt4o_bare_rep2/json/",
+      "existing_artifacts": {
+        "output_dir": "data/results/runs/gpt4o_bare/",
+        "metrics_path": "data/results/runs/gpt4o_bare/metrics.json",
+        "run_summary_path": "data/results/runs/gpt4o_bare/run_summary.json"
+      }
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep3",
+      "backbone": "gpt4o",
+      "method": "bare",
+      "seed": 43,
+      "replicate_id": 3,
+      "output_dir": "data/results/runs/gpt4o_bare_rep3/",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep3/coverage.json",
+      "json_task_dir": "data/results/runs/gpt4o_bare_rep3/json/"
+    }
+  ]
+}

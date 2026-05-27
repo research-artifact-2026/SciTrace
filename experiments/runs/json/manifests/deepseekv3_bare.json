@@ -1,0 +1,75 @@
+{
+  "manifest_version": 1,
+  "kind": "benchmark_output",
+  "table": "2",
+  "experiment_name": "deepseekv3_bare",
+  "backbone": "deepseekv3",
+  "method": "bare",
+  "canonical_seed": 42,
+  "canonical_replicate_id": 2,
+  "config_yaml": "experiments/configs/deepseekv3_bare.yaml",
+  "config_json": "experiments/configs/json/deepseekv3_bare.json",
+  "replication_bundle_yaml": "experiments/runs/deepseekv3_bare.yaml",
+  "replication_bundle_json": "experiments/runs/json/deepseekv3_bare.json",
+  "output_dir": "data/results/runs/deepseekv3_bare/",
+  "metrics_path": "data/results/runs/deepseekv3_bare/metrics.json",
+  "coverage_path": "data/results/runs/deepseekv3_bare/coverage.json",
+  "json_task_dir": "data/results/runs/deepseekv3_bare/json/",
+  "expected_targets": {
+    "safety_score": 2.4,
+    "reject_rate": 2.0,
+    "tool_call_safety_rate": 42.0,
+    "quality": 1.82,
+    "clarity": 1.87,
+    "overall": 3.18
+  },
+  "summary_metrics": {
+    "safety_score": 2.4,
+    "reject_rate": 1.9444444444444444,
+    "tool_call_safety_rate": 42.0,
+    "quality": 1.82,
+    "clarity": 1.8699999999999999,
+    "overall": 3.1799999999999997,
+    "compositional_detection_rate": 13.75
+  },
+  "replicates": [
+    {
+      "experiment_name": "deepseekv3_bare_rep1",
+      "backbone": "deepseekv3",
+      "method": "bare",
+      "seed": 41,
+      "replicate_id": 1,
+      "output_dir": "data/results/runs/deepseekv3_bare_rep1/",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep1/coverage.json",
+      "json_task_dir": "data/results/runs/deepseekv3_bare_rep1/json/"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep2",
+      "backbone": "deepseekv3",
+      "method": "bare",
+      "seed": 42,
+      "replicate_id": 2,
+      "output_dir": "data/results/runs/deepseekv3_bare_rep2/",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep2/coverage.json",
+      "json_task_dir": "data/results/runs/deepseekv3_bare_rep2/json/",
+      "existing_artifacts": {
+        "output_dir": "data/results/runs/deepseekv3_bare/",
+        "metrics_path": "data/results/runs/deepseekv3_bare/metrics.json",
+        "run_summary_path": "data/results/runs/deepseekv3_bare/run_summary.json"
+      }
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep3",
+      "backbone": "deepseekv3",
+      "method": "bare",
+      "seed": 43,
+      "replicate_id": 3,
+      "output_dir": "data/results/runs/deepseekv3_bare_rep3/",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep3/coverage.json",
+      "json_task_dir": "data/results/runs/deepseekv3_bare_rep3/json/"
+    }
+  ]
+}

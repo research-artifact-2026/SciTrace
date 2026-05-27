@@ -1,0 +1,2254 @@
+{
+  "runs": [
+    {
+      "experiment_name": "qwen25_72b_ctv_only",
+      "run_key": "ablations/qwen25_72b_ctv_only",
+      "config": "experiments/ablations/json/qwen25_72b_ctv_only.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_ctv_only",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_ctv_only/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_ctv_only/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_ctv_only/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_ctv_only",
+      "run_key": "ablations/qwen25_72b_ctv_only",
+      "config": "experiments/ablations/qwen25_72b_ctv_only.yaml",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_ctv_only",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_ctv_only/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_ctv_only/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_ctv_only/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_ctv_only",
+      "run_key": "ablations/qwen25_72b_ctv_only",
+      "config": "experiments/ablations/runs/json/qwen25_72b_ctv_only.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_ctv_only",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_ctv_only/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_ctv_only/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_ctv_only/coverage.json"
+    },
+    {
+      "experiment_name": "no_review",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/no_review",
+      "config": "experiments/ablations/json/qwen25_72b_reviewer_ablation.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/coverage.json"
+    },
+    {
+      "experiment_name": "no_review",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/no_review",
+      "config": "experiments/ablations/qwen25_72b_reviewer_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/coverage.json"
+    },
+    {
+      "experiment_name": "no_review",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/no_review",
+      "config": "experiments/ablations/runs/json/qwen25_72b_reviewer_ablation/no_review.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/no_review/coverage.json"
+    },
+    {
+      "experiment_name": "safescientist_reviewer",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer",
+      "config": "experiments/ablations/json/qwen25_72b_reviewer_ablation.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/coverage.json"
+    },
+    {
+      "experiment_name": "safescientist_reviewer",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer",
+      "config": "experiments/ablations/qwen25_72b_reviewer_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/coverage.json"
+    },
+    {
+      "experiment_name": "safescientist_reviewer",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer",
+      "config": "experiments/ablations/runs/json/qwen25_72b_reviewer_ablation/safescientist_reviewer.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/safescientist_reviewer/coverage.json"
+    },
+    {
+      "experiment_name": "scitrace_reviewer",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer",
+      "config": "experiments/ablations/json/qwen25_72b_reviewer_ablation.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/coverage.json"
+    },
+    {
+      "experiment_name": "scitrace_reviewer",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer",
+      "config": "experiments/ablations/qwen25_72b_reviewer_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/coverage.json"
+    },
+    {
+      "experiment_name": "scitrace_reviewer",
+      "run_key": "ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer",
+      "config": "experiments/ablations/runs/json/qwen25_72b_reviewer_ablation/scitrace_reviewer.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/scitrace_reviewer/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_sir_only",
+      "run_key": "ablations/qwen25_72b_sir_only",
+      "config": "experiments/ablations/json/qwen25_72b_sir_only.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_sir_only",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_sir_only/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_sir_only/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_sir_only/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_sir_only",
+      "run_key": "ablations/qwen25_72b_sir_only",
+      "config": "experiments/ablations/qwen25_72b_sir_only.yaml",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_sir_only",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_sir_only/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_sir_only/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_sir_only/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_sir_only",
+      "run_key": "ablations/qwen25_72b_sir_only",
+      "config": "experiments/ablations/runs/json/qwen25_72b_sir_only.json",
+      "output_dir": "data/results/runs/ablations/qwen25_72b_sir_only",
+      "json_dir": "data/results/runs/ablations/qwen25_72b_sir_only/json",
+      "metrics_path": "data/results/runs/ablations/qwen25_72b_sir_only/metrics.json",
+      "coverage_path": "data/results/runs/ablations/qwen25_72b_sir_only/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.3",
+      "run_key": "ablations/threshold_0.3",
+      "config": "experiments/ablations/json/ctv_threshold_sweep.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.3",
+      "json_dir": "data/results/runs/ablations/threshold_0.3/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.3/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.3",
+      "run_key": "ablations/threshold_0.3",
+      "config": "experiments/ablations/ctv_threshold_sweep.yaml",
+      "output_dir": "data/results/runs/ablations/threshold_0.3",
+      "json_dir": "data/results/runs/ablations/threshold_0.3/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.3/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.3",
+      "run_key": "ablations/threshold_0.3",
+      "config": "experiments/ablations/runs/json/ctv_threshold_sweep/qwen25_72b_threshold_0.3.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.3",
+      "json_dir": "data/results/runs/ablations/threshold_0.3/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.3/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.4",
+      "run_key": "ablations/threshold_0.4",
+      "config": "experiments/ablations/json/ctv_threshold_sweep.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.4",
+      "json_dir": "data/results/runs/ablations/threshold_0.4/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.4/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.4/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.4",
+      "run_key": "ablations/threshold_0.4",
+      "config": "experiments/ablations/ctv_threshold_sweep.yaml",
+      "output_dir": "data/results/runs/ablations/threshold_0.4",
+      "json_dir": "data/results/runs/ablations/threshold_0.4/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.4/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.4/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.4",
+      "run_key": "ablations/threshold_0.4",
+      "config": "experiments/ablations/runs/json/ctv_threshold_sweep/qwen25_72b_threshold_0.4.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.4",
+      "json_dir": "data/results/runs/ablations/threshold_0.4/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.4/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.4/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.5",
+      "run_key": "ablations/threshold_0.5",
+      "config": "experiments/ablations/json/ctv_threshold_sweep.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.5",
+      "json_dir": "data/results/runs/ablations/threshold_0.5/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.5/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.5/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.5",
+      "run_key": "ablations/threshold_0.5",
+      "config": "experiments/ablations/ctv_threshold_sweep.yaml",
+      "output_dir": "data/results/runs/ablations/threshold_0.5",
+      "json_dir": "data/results/runs/ablations/threshold_0.5/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.5/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.5/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.5",
+      "run_key": "ablations/threshold_0.5",
+      "config": "experiments/ablations/runs/json/ctv_threshold_sweep/qwen25_72b_threshold_0.5.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.5",
+      "json_dir": "data/results/runs/ablations/threshold_0.5/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.5/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.5/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.6",
+      "run_key": "ablations/threshold_0.6",
+      "config": "experiments/ablations/json/ctv_threshold_sweep.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.6",
+      "json_dir": "data/results/runs/ablations/threshold_0.6/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.6/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.6/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.6",
+      "run_key": "ablations/threshold_0.6",
+      "config": "experiments/ablations/ctv_threshold_sweep.yaml",
+      "output_dir": "data/results/runs/ablations/threshold_0.6",
+      "json_dir": "data/results/runs/ablations/threshold_0.6/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.6/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.6/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.6",
+      "run_key": "ablations/threshold_0.6",
+      "config": "experiments/ablations/runs/json/ctv_threshold_sweep/qwen25_72b_threshold_0.6.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.6",
+      "json_dir": "data/results/runs/ablations/threshold_0.6/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.6/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.6/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.7",
+      "run_key": "ablations/threshold_0.7",
+      "config": "experiments/ablations/json/ctv_threshold_sweep.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.7",
+      "json_dir": "data/results/runs/ablations/threshold_0.7/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.7/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.7/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.7",
+      "run_key": "ablations/threshold_0.7",
+      "config": "experiments/ablations/ctv_threshold_sweep.yaml",
+      "output_dir": "data/results/runs/ablations/threshold_0.7",
+      "json_dir": "data/results/runs/ablations/threshold_0.7/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.7/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.7/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_threshold_0.7",
+      "run_key": "ablations/threshold_0.7",
+      "config": "experiments/ablations/runs/json/ctv_threshold_sweep/qwen25_72b_threshold_0.7.json",
+      "output_dir": "data/results/runs/ablations/threshold_0.7",
+      "json_dir": "data/results/runs/ablations/threshold_0.7/json",
+      "metrics_path": "data/results/runs/ablations/threshold_0.7/metrics.json",
+      "coverage_path": "data/results/runs/ablations/threshold_0.7/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_default",
+      "run_key": "ablations/weight_default",
+      "config": "experiments/ablations/json/ctv_weight_ablation.json",
+      "output_dir": "data/results/runs/ablations/weight_default",
+      "json_dir": "data/results/runs/ablations/weight_default/json",
+      "metrics_path": "data/results/runs/ablations/weight_default/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_default/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_default",
+      "run_key": "ablations/weight_default",
+      "config": "experiments/ablations/ctv_weight_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/weight_default",
+      "json_dir": "data/results/runs/ablations/weight_default/json",
+      "metrics_path": "data/results/runs/ablations/weight_default/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_default/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_default",
+      "run_key": "ablations/weight_default",
+      "config": "experiments/ablations/runs/json/ctv_weight_ablation/qwen25_72b_weight_default.json",
+      "output_dir": "data/results/runs/ablations/weight_default",
+      "json_dir": "data/results/runs/ablations/weight_default/json",
+      "metrics_path": "data/results/runs/ablations/weight_default/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_default/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_high_comp_risk",
+      "run_key": "ablations/weight_high_comp_risk",
+      "config": "experiments/ablations/json/ctv_weight_ablation.json",
+      "output_dir": "data/results/runs/ablations/weight_high_comp_risk",
+      "json_dir": "data/results/runs/ablations/weight_high_comp_risk/json",
+      "metrics_path": "data/results/runs/ablations/weight_high_comp_risk/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_high_comp_risk/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_high_comp_risk",
+      "run_key": "ablations/weight_high_comp_risk",
+      "config": "experiments/ablations/ctv_weight_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/weight_high_comp_risk",
+      "json_dir": "data/results/runs/ablations/weight_high_comp_risk/json",
+      "metrics_path": "data/results/runs/ablations/weight_high_comp_risk/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_high_comp_risk/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_high_comp_risk",
+      "run_key": "ablations/weight_high_comp_risk",
+      "config": "experiments/ablations/runs/json/ctv_weight_ablation/qwen25_72b_weight_high_comp_risk.json",
+      "output_dir": "data/results/runs/ablations/weight_high_comp_risk",
+      "json_dir": "data/results/runs/ablations/weight_high_comp_risk/json",
+      "metrics_path": "data/results/runs/ablations/weight_high_comp_risk/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_high_comp_risk/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_no_comp_risk",
+      "run_key": "ablations/weight_no_comp_risk",
+      "config": "experiments/ablations/json/ctv_weight_ablation.json",
+      "output_dir": "data/results/runs/ablations/weight_no_comp_risk",
+      "json_dir": "data/results/runs/ablations/weight_no_comp_risk/json",
+      "metrics_path": "data/results/runs/ablations/weight_no_comp_risk/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_no_comp_risk/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_no_comp_risk",
+      "run_key": "ablations/weight_no_comp_risk",
+      "config": "experiments/ablations/ctv_weight_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/weight_no_comp_risk",
+      "json_dir": "data/results/runs/ablations/weight_no_comp_risk/json",
+      "metrics_path": "data/results/runs/ablations/weight_no_comp_risk/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_no_comp_risk/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_no_comp_risk",
+      "run_key": "ablations/weight_no_comp_risk",
+      "config": "experiments/ablations/runs/json/ctv_weight_ablation/qwen25_72b_weight_no_comp_risk.json",
+      "output_dir": "data/results/runs/ablations/weight_no_comp_risk",
+      "json_dir": "data/results/runs/ablations/weight_no_comp_risk/json",
+      "metrics_path": "data/results/runs/ablations/weight_no_comp_risk/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_no_comp_risk/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_uniform",
+      "run_key": "ablations/weight_uniform",
+      "config": "experiments/ablations/json/ctv_weight_ablation.json",
+      "output_dir": "data/results/runs/ablations/weight_uniform",
+      "json_dir": "data/results/runs/ablations/weight_uniform/json",
+      "metrics_path": "data/results/runs/ablations/weight_uniform/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_uniform/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_uniform",
+      "run_key": "ablations/weight_uniform",
+      "config": "experiments/ablations/ctv_weight_ablation.yaml",
+      "output_dir": "data/results/runs/ablations/weight_uniform",
+      "json_dir": "data/results/runs/ablations/weight_uniform/json",
+      "metrics_path": "data/results/runs/ablations/weight_uniform/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_uniform/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_weight_uniform",
+      "run_key": "ablations/weight_uniform",
+      "config": "experiments/ablations/runs/json/ctv_weight_ablation/qwen25_72b_weight_uniform.json",
+      "output_dir": "data/results/runs/ablations/weight_uniform",
+      "json_dir": "data/results/runs/ablations/weight_uniform/json",
+      "metrics_path": "data/results/runs/ablations/weight_uniform/metrics.json",
+      "coverage_path": "data/results/runs/ablations/weight_uniform/coverage.json"
+    },
+    {
+      "experiment_name": "table7_base64_attack",
+      "run_key": "adversarial/base64_attack",
+      "config": "experiments/adversarial/json/base64_attack.json",
+      "output_dir": "data/results/runs/adversarial/base64_attack",
+      "json_dir": "data/results/runs/adversarial/base64_attack/json",
+      "metrics_path": "data/results/runs/adversarial/base64_attack/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/base64_attack/coverage.json"
+    },
+    {
+      "experiment_name": "base64_attack_gpt4o_safescientist",
+      "run_key": "adversarial/base64_attack/gpt4o_safescientist",
+      "config": "experiments/adversarial/runs/json/base64_attack.json",
+      "output_dir": "data/results/runs/adversarial/base64_attack/gpt4o_safescientist",
+      "json_dir": "data/results/runs/adversarial/base64_attack/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/base64_attack/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/base64_attack/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "base64_attack_gpt4o_scitrace",
+      "run_key": "adversarial/base64_attack/gpt4o_scitrace",
+      "config": "experiments/adversarial/runs/json/base64_attack.json",
+      "output_dir": "data/results/runs/adversarial/base64_attack/gpt4o_scitrace",
+      "json_dir": "data/results/runs/adversarial/base64_attack/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/base64_attack/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/base64_attack/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "base64_attack_llama31_70b_safescientist",
+      "run_key": "adversarial/base64_attack/llama31_70b_safescientist",
+      "config": "experiments/adversarial/runs/json/base64_attack.json",
+      "output_dir": "data/results/runs/adversarial/base64_attack/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/adversarial/base64_attack/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/base64_attack/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/base64_attack/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "base64_attack_llama31_70b_scitrace",
+      "run_key": "adversarial/base64_attack/llama31_70b_scitrace",
+      "config": "experiments/adversarial/runs/json/base64_attack.json",
+      "output_dir": "data/results/runs/adversarial/base64_attack/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/adversarial/base64_attack/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/base64_attack/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/base64_attack/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table7_dan_attack",
+      "run_key": "adversarial/dan_attack",
+      "config": "experiments/adversarial/json/dan_attack.json",
+      "output_dir": "data/results/runs/adversarial/dan_attack",
+      "json_dir": "data/results/runs/adversarial/dan_attack/json",
+      "metrics_path": "data/results/runs/adversarial/dan_attack/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/dan_attack/coverage.json"
+    },
+    {
+      "experiment_name": "dan_attack_gpt4o_safescientist",
+      "run_key": "adversarial/dan_attack/gpt4o_safescientist",
+      "config": "experiments/adversarial/runs/json/dan_attack.json",
+      "output_dir": "data/results/runs/adversarial/dan_attack/gpt4o_safescientist",
+      "json_dir": "data/results/runs/adversarial/dan_attack/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/dan_attack/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/dan_attack/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "dan_attack_gpt4o_scitrace",
+      "run_key": "adversarial/dan_attack/gpt4o_scitrace",
+      "config": "experiments/adversarial/runs/json/dan_attack.json",
+      "output_dir": "data/results/runs/adversarial/dan_attack/gpt4o_scitrace",
+      "json_dir": "data/results/runs/adversarial/dan_attack/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/dan_attack/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/dan_attack/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "dan_attack_llama31_70b_safescientist",
+      "run_key": "adversarial/dan_attack/llama31_70b_safescientist",
+      "config": "experiments/adversarial/runs/json/dan_attack.json",
+      "output_dir": "data/results/runs/adversarial/dan_attack/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/adversarial/dan_attack/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/dan_attack/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/dan_attack/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "dan_attack_llama31_70b_scitrace",
+      "run_key": "adversarial/dan_attack/llama31_70b_scitrace",
+      "config": "experiments/adversarial/runs/json/dan_attack.json",
+      "output_dir": "data/results/runs/adversarial/dan_attack/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/adversarial/dan_attack/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/dan_attack/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/dan_attack/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table7_deepinception_attack",
+      "run_key": "adversarial/deepinception_attack",
+      "config": "experiments/adversarial/json/deepinception_attack.json",
+      "output_dir": "data/results/runs/adversarial/deepinception_attack",
+      "json_dir": "data/results/runs/adversarial/deepinception_attack/json",
+      "metrics_path": "data/results/runs/adversarial/deepinception_attack/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/deepinception_attack/coverage.json"
+    },
+    {
+      "experiment_name": "deepinception_attack_gpt4o_safescientist",
+      "run_key": "adversarial/deepinception_attack/gpt4o_safescientist",
+      "config": "experiments/adversarial/runs/json/deepinception_attack.json",
+      "output_dir": "data/results/runs/adversarial/deepinception_attack/gpt4o_safescientist",
+      "json_dir": "data/results/runs/adversarial/deepinception_attack/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/deepinception_attack/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/deepinception_attack/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "deepinception_attack_gpt4o_scitrace",
+      "run_key": "adversarial/deepinception_attack/gpt4o_scitrace",
+      "config": "experiments/adversarial/runs/json/deepinception_attack.json",
+      "output_dir": "data/results/runs/adversarial/deepinception_attack/gpt4o_scitrace",
+      "json_dir": "data/results/runs/adversarial/deepinception_attack/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/deepinception_attack/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/deepinception_attack/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "deepinception_attack_llama31_70b_safescientist",
+      "run_key": "adversarial/deepinception_attack/llama31_70b_safescientist",
+      "config": "experiments/adversarial/runs/json/deepinception_attack.json",
+      "output_dir": "data/results/runs/adversarial/deepinception_attack/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/adversarial/deepinception_attack/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/deepinception_attack/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/deepinception_attack/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "deepinception_attack_llama31_70b_scitrace",
+      "run_key": "adversarial/deepinception_attack/llama31_70b_scitrace",
+      "config": "experiments/adversarial/runs/json/deepinception_attack.json",
+      "output_dir": "data/results/runs/adversarial/deepinception_attack/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/adversarial/deepinception_attack/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/deepinception_attack/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/deepinception_attack/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table7_load_splitting_attack",
+      "run_key": "adversarial/load_splitting_attack",
+      "config": "experiments/adversarial/json/load_splitting_attack.json",
+      "output_dir": "data/results/runs/adversarial/load_splitting_attack",
+      "json_dir": "data/results/runs/adversarial/load_splitting_attack/json",
+      "metrics_path": "data/results/runs/adversarial/load_splitting_attack/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/load_splitting_attack/coverage.json"
+    },
+    {
+      "experiment_name": "load_splitting_attack_gpt4o_safescientist",
+      "run_key": "adversarial/load_splitting_attack/gpt4o_safescientist",
+      "config": "experiments/adversarial/runs/json/load_splitting_attack.json",
+      "output_dir": "data/results/runs/adversarial/load_splitting_attack/gpt4o_safescientist",
+      "json_dir": "data/results/runs/adversarial/load_splitting_attack/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/load_splitting_attack/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/load_splitting_attack/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "load_splitting_attack_gpt4o_scitrace",
+      "run_key": "adversarial/load_splitting_attack/gpt4o_scitrace",
+      "config": "experiments/adversarial/runs/json/load_splitting_attack.json",
+      "output_dir": "data/results/runs/adversarial/load_splitting_attack/gpt4o_scitrace",
+      "json_dir": "data/results/runs/adversarial/load_splitting_attack/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/load_splitting_attack/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/load_splitting_attack/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "load_splitting_attack_llama31_70b_safescientist",
+      "run_key": "adversarial/load_splitting_attack/llama31_70b_safescientist",
+      "config": "experiments/adversarial/runs/json/load_splitting_attack.json",
+      "output_dir": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "load_splitting_attack_llama31_70b_scitrace",
+      "run_key": "adversarial/load_splitting_attack/llama31_70b_scitrace",
+      "config": "experiments/adversarial/runs/json/load_splitting_attack.json",
+      "output_dir": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/load_splitting_attack/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table7_malicious_agent_attack",
+      "run_key": "adversarial/malicious_agent_attack",
+      "config": "experiments/adversarial/json/malicious_agent_attack.json",
+      "output_dir": "data/results/runs/adversarial/malicious_agent_attack",
+      "json_dir": "data/results/runs/adversarial/malicious_agent_attack/json",
+      "metrics_path": "data/results/runs/adversarial/malicious_agent_attack/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/malicious_agent_attack/coverage.json"
+    },
+    {
+      "experiment_name": "malicious_agent_attack_gpt4o_safescientist",
+      "run_key": "adversarial/malicious_agent_attack/gpt4o_safescientist",
+      "config": "experiments/adversarial/runs/json/malicious_agent_attack.json",
+      "output_dir": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_safescientist",
+      "json_dir": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "malicious_agent_attack_gpt4o_scitrace",
+      "run_key": "adversarial/malicious_agent_attack/gpt4o_scitrace",
+      "config": "experiments/adversarial/runs/json/malicious_agent_attack.json",
+      "output_dir": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_scitrace",
+      "json_dir": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/malicious_agent_attack/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "malicious_agent_attack_llama31_70b_safescientist",
+      "run_key": "adversarial/malicious_agent_attack/llama31_70b_safescientist",
+      "config": "experiments/adversarial/runs/json/malicious_agent_attack.json",
+      "output_dir": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "malicious_agent_attack_llama31_70b_scitrace",
+      "run_key": "adversarial/malicious_agent_attack/llama31_70b_scitrace",
+      "config": "experiments/adversarial/runs/json/malicious_agent_attack.json",
+      "output_dir": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/adversarial/malicious_agent_attack/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare",
+      "run_key": "deepseekv3_bare",
+      "config": "experiments/configs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare",
+      "json_dir": "data/results/runs/deepseekv3_bare/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare",
+      "run_key": "deepseekv3_bare",
+      "config": "experiments/configs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare",
+      "json_dir": "data/results/runs/deepseekv3_bare/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep1",
+      "run_key": "deepseekv3_bare_rep1",
+      "config": "experiments/runs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep1",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep1",
+      "run_key": "deepseekv3_bare_rep1",
+      "config": "experiments/runs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep1",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep1",
+      "run_key": "deepseekv3_bare_rep1",
+      "config": "experiments/runs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep1",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep1",
+      "run_key": "deepseekv3_bare_rep1",
+      "config": "experiments/runs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep1",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep2",
+      "run_key": "deepseekv3_bare_rep2",
+      "config": "experiments/runs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep2",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep2",
+      "run_key": "deepseekv3_bare_rep2",
+      "config": "experiments/runs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep2",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep2",
+      "run_key": "deepseekv3_bare_rep2",
+      "config": "experiments/runs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep2",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep2",
+      "run_key": "deepseekv3_bare_rep2",
+      "config": "experiments/runs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep2",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep3",
+      "run_key": "deepseekv3_bare_rep3",
+      "config": "experiments/runs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep3",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep3",
+      "run_key": "deepseekv3_bare_rep3",
+      "config": "experiments/runs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep3",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep3",
+      "run_key": "deepseekv3_bare_rep3",
+      "config": "experiments/runs/json/deepseekv3_bare.json",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep3",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_bare_rep3",
+      "run_key": "deepseekv3_bare_rep3",
+      "config": "experiments/runs/deepseekv3_bare.yaml",
+      "output_dir": "data/results/runs/deepseekv3_bare_rep3",
+      "json_dir": "data/results/runs/deepseekv3_bare_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist",
+      "run_key": "deepseekv3_safescientist",
+      "config": "experiments/configs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist",
+      "json_dir": "data/results/runs/deepseekv3_safescientist/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist",
+      "run_key": "deepseekv3_safescientist",
+      "config": "experiments/configs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist",
+      "json_dir": "data/results/runs/deepseekv3_safescientist/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep1",
+      "run_key": "deepseekv3_safescientist_rep1",
+      "config": "experiments/runs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep1",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep1",
+      "run_key": "deepseekv3_safescientist_rep1",
+      "config": "experiments/runs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep1",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep1",
+      "run_key": "deepseekv3_safescientist_rep1",
+      "config": "experiments/runs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep1",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep1",
+      "run_key": "deepseekv3_safescientist_rep1",
+      "config": "experiments/runs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep1",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep2",
+      "run_key": "deepseekv3_safescientist_rep2",
+      "config": "experiments/runs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep2",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep2",
+      "run_key": "deepseekv3_safescientist_rep2",
+      "config": "experiments/runs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep2",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep2",
+      "run_key": "deepseekv3_safescientist_rep2",
+      "config": "experiments/runs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep2",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep2",
+      "run_key": "deepseekv3_safescientist_rep2",
+      "config": "experiments/runs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep2",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep3",
+      "run_key": "deepseekv3_safescientist_rep3",
+      "config": "experiments/runs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep3",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep3",
+      "run_key": "deepseekv3_safescientist_rep3",
+      "config": "experiments/runs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep3",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep3",
+      "run_key": "deepseekv3_safescientist_rep3",
+      "config": "experiments/runs/json/deepseekv3_safescientist.json",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep3",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_safescientist_rep3",
+      "run_key": "deepseekv3_safescientist_rep3",
+      "config": "experiments/runs/deepseekv3_safescientist.yaml",
+      "output_dir": "data/results/runs/deepseekv3_safescientist_rep3",
+      "json_dir": "data/results/runs/deepseekv3_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace",
+      "run_key": "deepseekv3_scitrace",
+      "config": "experiments/configs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace",
+      "json_dir": "data/results/runs/deepseekv3_scitrace/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace",
+      "run_key": "deepseekv3_scitrace",
+      "config": "experiments/configs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace",
+      "json_dir": "data/results/runs/deepseekv3_scitrace/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep1",
+      "run_key": "deepseekv3_scitrace_rep1",
+      "config": "experiments/runs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep1",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep1",
+      "run_key": "deepseekv3_scitrace_rep1",
+      "config": "experiments/runs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep1",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep1",
+      "run_key": "deepseekv3_scitrace_rep1",
+      "config": "experiments/runs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep1",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep1",
+      "run_key": "deepseekv3_scitrace_rep1",
+      "config": "experiments/runs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep1",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep2",
+      "run_key": "deepseekv3_scitrace_rep2",
+      "config": "experiments/runs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep2",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep2",
+      "run_key": "deepseekv3_scitrace_rep2",
+      "config": "experiments/runs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep2",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep2",
+      "run_key": "deepseekv3_scitrace_rep2",
+      "config": "experiments/runs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep2",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep2",
+      "run_key": "deepseekv3_scitrace_rep2",
+      "config": "experiments/runs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep2",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep3",
+      "run_key": "deepseekv3_scitrace_rep3",
+      "config": "experiments/runs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep3",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep3",
+      "run_key": "deepseekv3_scitrace_rep3",
+      "config": "experiments/runs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep3",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep3",
+      "run_key": "deepseekv3_scitrace_rep3",
+      "config": "experiments/runs/json/deepseekv3_scitrace.json",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep3",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "deepseekv3_scitrace_rep3",
+      "run_key": "deepseekv3_scitrace_rep3",
+      "config": "experiments/runs/deepseekv3_scitrace.yaml",
+      "output_dir": "data/results/runs/deepseekv3_scitrace_rep3",
+      "json_dir": "data/results/runs/deepseekv3_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/deepseekv3_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/deepseekv3_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "table6_authority_invocation",
+      "run_key": "discussion_attacker/authority_invocation",
+      "config": "experiments/discussion_attacker/json/authority_invocation.json",
+      "output_dir": "data/results/runs/discussion_attacker/authority_invocation",
+      "json_dir": "data/results/runs/discussion_attacker/authority_invocation/json",
+      "metrics_path": "data/results/runs/discussion_attacker/authority_invocation/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/authority_invocation/coverage.json"
+    },
+    {
+      "experiment_name": "authority_invocation_safescientist",
+      "run_key": "discussion_attacker/authority_invocation/safescientist",
+      "config": "experiments/discussion_attacker/runs/json/authority_invocation.json",
+      "output_dir": "data/results/runs/discussion_attacker/authority_invocation/safescientist",
+      "json_dir": "data/results/runs/discussion_attacker/authority_invocation/safescientist/json",
+      "metrics_path": "data/results/runs/discussion_attacker/authority_invocation/safescientist/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/authority_invocation/safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "authority_invocation_scitrace",
+      "run_key": "discussion_attacker/authority_invocation/scitrace",
+      "config": "experiments/discussion_attacker/runs/json/authority_invocation.json",
+      "output_dir": "data/results/runs/discussion_attacker/authority_invocation/scitrace",
+      "json_dir": "data/results/runs/discussion_attacker/authority_invocation/scitrace/json",
+      "metrics_path": "data/results/runs/discussion_attacker/authority_invocation/scitrace/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/authority_invocation/scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table6_collaborative_deception",
+      "run_key": "discussion_attacker/collaborative_deception",
+      "config": "experiments/discussion_attacker/json/collaborative_deception.json",
+      "output_dir": "data/results/runs/discussion_attacker/collaborative_deception",
+      "json_dir": "data/results/runs/discussion_attacker/collaborative_deception/json",
+      "metrics_path": "data/results/runs/discussion_attacker/collaborative_deception/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/collaborative_deception/coverage.json"
+    },
+    {
+      "experiment_name": "collaborative_deception_safescientist",
+      "run_key": "discussion_attacker/collaborative_deception/safescientist",
+      "config": "experiments/discussion_attacker/runs/json/collaborative_deception.json",
+      "output_dir": "data/results/runs/discussion_attacker/collaborative_deception/safescientist",
+      "json_dir": "data/results/runs/discussion_attacker/collaborative_deception/safescientist/json",
+      "metrics_path": "data/results/runs/discussion_attacker/collaborative_deception/safescientist/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/collaborative_deception/safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "collaborative_deception_scitrace",
+      "run_key": "discussion_attacker/collaborative_deception/scitrace",
+      "config": "experiments/discussion_attacker/runs/json/collaborative_deception.json",
+      "output_dir": "data/results/runs/discussion_attacker/collaborative_deception/scitrace",
+      "json_dir": "data/results/runs/discussion_attacker/collaborative_deception/scitrace/json",
+      "metrics_path": "data/results/runs/discussion_attacker/collaborative_deception/scitrace/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/collaborative_deception/scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table6_gradual_persuasion",
+      "run_key": "discussion_attacker/gradual_persuasion",
+      "config": "experiments/discussion_attacker/json/gradual_persuasion.json",
+      "output_dir": "data/results/runs/discussion_attacker/gradual_persuasion",
+      "json_dir": "data/results/runs/discussion_attacker/gradual_persuasion/json",
+      "metrics_path": "data/results/runs/discussion_attacker/gradual_persuasion/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/gradual_persuasion/coverage.json"
+    },
+    {
+      "experiment_name": "gradual_persuasion_safescientist",
+      "run_key": "discussion_attacker/gradual_persuasion/safescientist",
+      "config": "experiments/discussion_attacker/runs/json/gradual_persuasion.json",
+      "output_dir": "data/results/runs/discussion_attacker/gradual_persuasion/safescientist",
+      "json_dir": "data/results/runs/discussion_attacker/gradual_persuasion/safescientist/json",
+      "metrics_path": "data/results/runs/discussion_attacker/gradual_persuasion/safescientist/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/gradual_persuasion/safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "gradual_persuasion_scitrace",
+      "run_key": "discussion_attacker/gradual_persuasion/scitrace",
+      "config": "experiments/discussion_attacker/runs/json/gradual_persuasion.json",
+      "output_dir": "data/results/runs/discussion_attacker/gradual_persuasion/scitrace",
+      "json_dir": "data/results/runs/discussion_attacker/gradual_persuasion/scitrace/json",
+      "metrics_path": "data/results/runs/discussion_attacker/gradual_persuasion/scitrace/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/gradual_persuasion/scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table6_incremental_escalation",
+      "run_key": "discussion_attacker/incremental_escalation",
+      "config": "experiments/discussion_attacker/json/incremental_escalation.json",
+      "output_dir": "data/results/runs/discussion_attacker/incremental_escalation",
+      "json_dir": "data/results/runs/discussion_attacker/incremental_escalation/json",
+      "metrics_path": "data/results/runs/discussion_attacker/incremental_escalation/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/incremental_escalation/coverage.json"
+    },
+    {
+      "experiment_name": "incremental_escalation_safescientist",
+      "run_key": "discussion_attacker/incremental_escalation/safescientist",
+      "config": "experiments/discussion_attacker/runs/json/incremental_escalation.json",
+      "output_dir": "data/results/runs/discussion_attacker/incremental_escalation/safescientist",
+      "json_dir": "data/results/runs/discussion_attacker/incremental_escalation/safescientist/json",
+      "metrics_path": "data/results/runs/discussion_attacker/incremental_escalation/safescientist/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/incremental_escalation/safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "incremental_escalation_scitrace",
+      "run_key": "discussion_attacker/incremental_escalation/scitrace",
+      "config": "experiments/discussion_attacker/runs/json/incremental_escalation.json",
+      "output_dir": "data/results/runs/discussion_attacker/incremental_escalation/scitrace",
+      "json_dir": "data/results/runs/discussion_attacker/incremental_escalation/scitrace/json",
+      "metrics_path": "data/results/runs/discussion_attacker/incremental_escalation/scitrace/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/incremental_escalation/scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "table6_role_play_override",
+      "run_key": "discussion_attacker/role_play_override",
+      "config": "experiments/discussion_attacker/json/role_play_override.json",
+      "output_dir": "data/results/runs/discussion_attacker/role_play_override",
+      "json_dir": "data/results/runs/discussion_attacker/role_play_override/json",
+      "metrics_path": "data/results/runs/discussion_attacker/role_play_override/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/role_play_override/coverage.json"
+    },
+    {
+      "experiment_name": "role_play_override_safescientist",
+      "run_key": "discussion_attacker/role_play_override/safescientist",
+      "config": "experiments/discussion_attacker/runs/json/role_play_override.json",
+      "output_dir": "data/results/runs/discussion_attacker/role_play_override/safescientist",
+      "json_dir": "data/results/runs/discussion_attacker/role_play_override/safescientist/json",
+      "metrics_path": "data/results/runs/discussion_attacker/role_play_override/safescientist/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/role_play_override/safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "role_play_override_scitrace",
+      "run_key": "discussion_attacker/role_play_override/scitrace",
+      "config": "experiments/discussion_attacker/runs/json/role_play_override.json",
+      "output_dir": "data/results/runs/discussion_attacker/role_play_override/scitrace",
+      "json_dir": "data/results/runs/discussion_attacker/role_play_override/scitrace/json",
+      "metrics_path": "data/results/runs/discussion_attacker/role_play_override/scitrace/metrics.json",
+      "coverage_path": "data/results/runs/discussion_attacker/role_play_override/scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare",
+      "run_key": "gpt4o_bare",
+      "config": "experiments/configs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare",
+      "json_dir": "data/results/runs/gpt4o_bare/json",
+      "metrics_path": "data/results/runs/gpt4o_bare/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare",
+      "run_key": "gpt4o_bare",
+      "config": "experiments/configs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare",
+      "json_dir": "data/results/runs/gpt4o_bare/json",
+      "metrics_path": "data/results/runs/gpt4o_bare/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep1",
+      "run_key": "gpt4o_bare_rep1",
+      "config": "experiments/runs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare_rep1",
+      "json_dir": "data/results/runs/gpt4o_bare_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep1",
+      "run_key": "gpt4o_bare_rep1",
+      "config": "experiments/runs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare_rep1",
+      "json_dir": "data/results/runs/gpt4o_bare_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep1",
+      "run_key": "gpt4o_bare_rep1",
+      "config": "experiments/runs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare_rep1",
+      "json_dir": "data/results/runs/gpt4o_bare_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep1",
+      "run_key": "gpt4o_bare_rep1",
+      "config": "experiments/runs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare_rep1",
+      "json_dir": "data/results/runs/gpt4o_bare_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep2",
+      "run_key": "gpt4o_bare_rep2",
+      "config": "experiments/runs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare_rep2",
+      "json_dir": "data/results/runs/gpt4o_bare_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep2",
+      "run_key": "gpt4o_bare_rep2",
+      "config": "experiments/runs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare_rep2",
+      "json_dir": "data/results/runs/gpt4o_bare_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep2",
+      "run_key": "gpt4o_bare_rep2",
+      "config": "experiments/runs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare_rep2",
+      "json_dir": "data/results/runs/gpt4o_bare_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep2",
+      "run_key": "gpt4o_bare_rep2",
+      "config": "experiments/runs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare_rep2",
+      "json_dir": "data/results/runs/gpt4o_bare_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep3",
+      "run_key": "gpt4o_bare_rep3",
+      "config": "experiments/runs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare_rep3",
+      "json_dir": "data/results/runs/gpt4o_bare_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep3",
+      "run_key": "gpt4o_bare_rep3",
+      "config": "experiments/runs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare_rep3",
+      "json_dir": "data/results/runs/gpt4o_bare_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep3",
+      "run_key": "gpt4o_bare_rep3",
+      "config": "experiments/runs/json/gpt4o_bare.json",
+      "output_dir": "data/results/runs/gpt4o_bare_rep3",
+      "json_dir": "data/results/runs/gpt4o_bare_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_bare_rep3",
+      "run_key": "gpt4o_bare_rep3",
+      "config": "experiments/runs/gpt4o_bare.yaml",
+      "output_dir": "data/results/runs/gpt4o_bare_rep3",
+      "json_dir": "data/results/runs/gpt4o_bare_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist",
+      "run_key": "gpt4o_safescientist",
+      "config": "experiments/configs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist",
+      "json_dir": "data/results/runs/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist",
+      "run_key": "gpt4o_safescientist",
+      "config": "experiments/configs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist",
+      "json_dir": "data/results/runs/gpt4o_safescientist/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep1",
+      "run_key": "gpt4o_safescientist_rep1",
+      "config": "experiments/runs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep1",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep1",
+      "run_key": "gpt4o_safescientist_rep1",
+      "config": "experiments/runs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep1",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep1",
+      "run_key": "gpt4o_safescientist_rep1",
+      "config": "experiments/runs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep1",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep1",
+      "run_key": "gpt4o_safescientist_rep1",
+      "config": "experiments/runs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep1",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep2",
+      "run_key": "gpt4o_safescientist_rep2",
+      "config": "experiments/runs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep2",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep2",
+      "run_key": "gpt4o_safescientist_rep2",
+      "config": "experiments/runs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep2",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep2",
+      "run_key": "gpt4o_safescientist_rep2",
+      "config": "experiments/runs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep2",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep2",
+      "run_key": "gpt4o_safescientist_rep2",
+      "config": "experiments/runs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep2",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep3",
+      "run_key": "gpt4o_safescientist_rep3",
+      "config": "experiments/runs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep3",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep3",
+      "run_key": "gpt4o_safescientist_rep3",
+      "config": "experiments/runs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep3",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep3",
+      "run_key": "gpt4o_safescientist_rep3",
+      "config": "experiments/runs/json/gpt4o_safescientist.json",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep3",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_safescientist_rep3",
+      "run_key": "gpt4o_safescientist_rep3",
+      "config": "experiments/runs/gpt4o_safescientist.yaml",
+      "output_dir": "data/results/runs/gpt4o_safescientist_rep3",
+      "json_dir": "data/results/runs/gpt4o_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace",
+      "run_key": "gpt4o_scitrace",
+      "config": "experiments/configs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace",
+      "json_dir": "data/results/runs/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace",
+      "run_key": "gpt4o_scitrace",
+      "config": "experiments/configs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace",
+      "json_dir": "data/results/runs/gpt4o_scitrace/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep1",
+      "run_key": "gpt4o_scitrace_rep1",
+      "config": "experiments/runs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep1",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep1",
+      "run_key": "gpt4o_scitrace_rep1",
+      "config": "experiments/runs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep1",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep1",
+      "run_key": "gpt4o_scitrace_rep1",
+      "config": "experiments/runs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep1",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep1",
+      "run_key": "gpt4o_scitrace_rep1",
+      "config": "experiments/runs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep1",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep2",
+      "run_key": "gpt4o_scitrace_rep2",
+      "config": "experiments/runs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep2",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep2",
+      "run_key": "gpt4o_scitrace_rep2",
+      "config": "experiments/runs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep2",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep2",
+      "run_key": "gpt4o_scitrace_rep2",
+      "config": "experiments/runs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep2",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep2",
+      "run_key": "gpt4o_scitrace_rep2",
+      "config": "experiments/runs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep2",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep3",
+      "run_key": "gpt4o_scitrace_rep3",
+      "config": "experiments/runs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep3",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep3",
+      "run_key": "gpt4o_scitrace_rep3",
+      "config": "experiments/runs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep3",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep3",
+      "run_key": "gpt4o_scitrace_rep3",
+      "config": "experiments/runs/json/gpt4o_scitrace.json",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep3",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "gpt4o_scitrace_rep3",
+      "run_key": "gpt4o_scitrace_rep3",
+      "config": "experiments/runs/gpt4o_scitrace.yaml",
+      "output_dir": "data/results/runs/gpt4o_scitrace_rep3",
+      "json_dir": "data/results/runs/gpt4o_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/gpt4o_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/gpt4o_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare",
+      "run_key": "llama31_70b_bare",
+      "config": "experiments/configs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare",
+      "json_dir": "data/results/runs/llama31_70b_bare/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare",
+      "run_key": "llama31_70b_bare",
+      "config": "experiments/configs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare",
+      "json_dir": "data/results/runs/llama31_70b_bare/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep1",
+      "run_key": "llama31_70b_bare_rep1",
+      "config": "experiments/runs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep1",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep1",
+      "run_key": "llama31_70b_bare_rep1",
+      "config": "experiments/runs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep1",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep1",
+      "run_key": "llama31_70b_bare_rep1",
+      "config": "experiments/runs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep1",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep1",
+      "run_key": "llama31_70b_bare_rep1",
+      "config": "experiments/runs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep1",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep2",
+      "run_key": "llama31_70b_bare_rep2",
+      "config": "experiments/runs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep2",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep2",
+      "run_key": "llama31_70b_bare_rep2",
+      "config": "experiments/runs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep2",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep2",
+      "run_key": "llama31_70b_bare_rep2",
+      "config": "experiments/runs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep2",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep2",
+      "run_key": "llama31_70b_bare_rep2",
+      "config": "experiments/runs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep2",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep3",
+      "run_key": "llama31_70b_bare_rep3",
+      "config": "experiments/runs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep3",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep3",
+      "run_key": "llama31_70b_bare_rep3",
+      "config": "experiments/runs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep3",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep3",
+      "run_key": "llama31_70b_bare_rep3",
+      "config": "experiments/runs/json/llama31_70b_bare.json",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep3",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_bare_rep3",
+      "run_key": "llama31_70b_bare_rep3",
+      "config": "experiments/runs/llama31_70b_bare.yaml",
+      "output_dir": "data/results/runs/llama31_70b_bare_rep3",
+      "json_dir": "data/results/runs/llama31_70b_bare_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist",
+      "run_key": "llama31_70b_safescientist",
+      "config": "experiments/configs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist",
+      "run_key": "llama31_70b_safescientist",
+      "config": "experiments/configs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist",
+      "json_dir": "data/results/runs/llama31_70b_safescientist/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep1",
+      "run_key": "llama31_70b_safescientist_rep1",
+      "config": "experiments/runs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep1",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep1",
+      "run_key": "llama31_70b_safescientist_rep1",
+      "config": "experiments/runs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep1",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep1",
+      "run_key": "llama31_70b_safescientist_rep1",
+      "config": "experiments/runs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep1",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep1",
+      "run_key": "llama31_70b_safescientist_rep1",
+      "config": "experiments/runs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep1",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep2",
+      "run_key": "llama31_70b_safescientist_rep2",
+      "config": "experiments/runs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep2",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep2",
+      "run_key": "llama31_70b_safescientist_rep2",
+      "config": "experiments/runs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep2",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep2",
+      "run_key": "llama31_70b_safescientist_rep2",
+      "config": "experiments/runs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep2",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep2",
+      "run_key": "llama31_70b_safescientist_rep2",
+      "config": "experiments/runs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep2",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep3",
+      "run_key": "llama31_70b_safescientist_rep3",
+      "config": "experiments/runs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep3",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep3",
+      "run_key": "llama31_70b_safescientist_rep3",
+      "config": "experiments/runs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep3",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep3",
+      "run_key": "llama31_70b_safescientist_rep3",
+      "config": "experiments/runs/json/llama31_70b_safescientist.json",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep3",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_safescientist_rep3",
+      "run_key": "llama31_70b_safescientist_rep3",
+      "config": "experiments/runs/llama31_70b_safescientist.yaml",
+      "output_dir": "data/results/runs/llama31_70b_safescientist_rep3",
+      "json_dir": "data/results/runs/llama31_70b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace",
+      "run_key": "llama31_70b_scitrace",
+      "config": "experiments/configs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace",
+      "run_key": "llama31_70b_scitrace",
+      "config": "experiments/configs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace",
+      "json_dir": "data/results/runs/llama31_70b_scitrace/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep1",
+      "run_key": "llama31_70b_scitrace_rep1",
+      "config": "experiments/runs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep1",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep1",
+      "run_key": "llama31_70b_scitrace_rep1",
+      "config": "experiments/runs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep1",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep1",
+      "run_key": "llama31_70b_scitrace_rep1",
+      "config": "experiments/runs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep1",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep1",
+      "run_key": "llama31_70b_scitrace_rep1",
+      "config": "experiments/runs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep1",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep2",
+      "run_key": "llama31_70b_scitrace_rep2",
+      "config": "experiments/runs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep2",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep2",
+      "run_key": "llama31_70b_scitrace_rep2",
+      "config": "experiments/runs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep2",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep2",
+      "run_key": "llama31_70b_scitrace_rep2",
+      "config": "experiments/runs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep2",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep2",
+      "run_key": "llama31_70b_scitrace_rep2",
+      "config": "experiments/runs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep2",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep3",
+      "run_key": "llama31_70b_scitrace_rep3",
+      "config": "experiments/runs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep3",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep3",
+      "run_key": "llama31_70b_scitrace_rep3",
+      "config": "experiments/runs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep3",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep3",
+      "run_key": "llama31_70b_scitrace_rep3",
+      "config": "experiments/runs/json/llama31_70b_scitrace.json",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep3",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "llama31_70b_scitrace_rep3",
+      "run_key": "llama31_70b_scitrace_rep3",
+      "config": "experiments/runs/llama31_70b_scitrace.yaml",
+      "output_dir": "data/results/runs/llama31_70b_scitrace_rep3",
+      "json_dir": "data/results/runs/llama31_70b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/llama31_70b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/llama31_70b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare",
+      "run_key": "qwen25_72b_bare",
+      "config": "experiments/configs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare",
+      "json_dir": "data/results/runs/qwen25_72b_bare/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare",
+      "run_key": "qwen25_72b_bare",
+      "config": "experiments/configs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare",
+      "json_dir": "data/results/runs/qwen25_72b_bare/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep1",
+      "run_key": "qwen25_72b_bare_rep1",
+      "config": "experiments/runs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep1",
+      "run_key": "qwen25_72b_bare_rep1",
+      "config": "experiments/runs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep1",
+      "run_key": "qwen25_72b_bare_rep1",
+      "config": "experiments/runs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep1",
+      "run_key": "qwen25_72b_bare_rep1",
+      "config": "experiments/runs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep2",
+      "run_key": "qwen25_72b_bare_rep2",
+      "config": "experiments/runs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep2",
+      "run_key": "qwen25_72b_bare_rep2",
+      "config": "experiments/runs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep2",
+      "run_key": "qwen25_72b_bare_rep2",
+      "config": "experiments/runs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep2",
+      "run_key": "qwen25_72b_bare_rep2",
+      "config": "experiments/runs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep3",
+      "run_key": "qwen25_72b_bare_rep3",
+      "config": "experiments/runs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep3",
+      "run_key": "qwen25_72b_bare_rep3",
+      "config": "experiments/runs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep3",
+      "run_key": "qwen25_72b_bare_rep3",
+      "config": "experiments/runs/json/qwen25_72b_bare.json",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_bare_rep3",
+      "run_key": "qwen25_72b_bare_rep3",
+      "config": "experiments/runs/qwen25_72b_bare.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_bare_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_bare_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_bare_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_bare_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist",
+      "run_key": "qwen25_72b_safescientist",
+      "config": "experiments/configs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist",
+      "run_key": "qwen25_72b_safescientist",
+      "config": "experiments/configs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep1",
+      "run_key": "qwen25_72b_safescientist_rep1",
+      "config": "experiments/runs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep1",
+      "run_key": "qwen25_72b_safescientist_rep1",
+      "config": "experiments/runs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep1",
+      "run_key": "qwen25_72b_safescientist_rep1",
+      "config": "experiments/runs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep1",
+      "run_key": "qwen25_72b_safescientist_rep1",
+      "config": "experiments/runs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep2",
+      "run_key": "qwen25_72b_safescientist_rep2",
+      "config": "experiments/runs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep2",
+      "run_key": "qwen25_72b_safescientist_rep2",
+      "config": "experiments/runs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep2",
+      "run_key": "qwen25_72b_safescientist_rep2",
+      "config": "experiments/runs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep2",
+      "run_key": "qwen25_72b_safescientist_rep2",
+      "config": "experiments/runs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep3",
+      "run_key": "qwen25_72b_safescientist_rep3",
+      "config": "experiments/runs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep3",
+      "run_key": "qwen25_72b_safescientist_rep3",
+      "config": "experiments/runs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep3",
+      "run_key": "qwen25_72b_safescientist_rep3",
+      "config": "experiments/runs/json/qwen25_72b_safescientist.json",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_safescientist_rep3",
+      "run_key": "qwen25_72b_safescientist_rep3",
+      "config": "experiments/runs/qwen25_72b_safescientist.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_safescientist_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_safescientist_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_safescientist_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_safescientist_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace",
+      "run_key": "qwen25_72b_scitrace",
+      "config": "experiments/configs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace",
+      "run_key": "qwen25_72b_scitrace",
+      "config": "experiments/configs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep1",
+      "run_key": "qwen25_72b_scitrace_rep1",
+      "config": "experiments/runs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep1",
+      "run_key": "qwen25_72b_scitrace_rep1",
+      "config": "experiments/runs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep1",
+      "run_key": "qwen25_72b_scitrace_rep1",
+      "config": "experiments/runs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep1",
+      "run_key": "qwen25_72b_scitrace_rep1",
+      "config": "experiments/runs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep1",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep1/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep1/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep2",
+      "run_key": "qwen25_72b_scitrace_rep2",
+      "config": "experiments/runs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep2",
+      "run_key": "qwen25_72b_scitrace_rep2",
+      "config": "experiments/runs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep2",
+      "run_key": "qwen25_72b_scitrace_rep2",
+      "config": "experiments/runs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep2",
+      "run_key": "qwen25_72b_scitrace_rep2",
+      "config": "experiments/runs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep2",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep2/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep2/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep3",
+      "run_key": "qwen25_72b_scitrace_rep3",
+      "config": "experiments/runs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep3",
+      "run_key": "qwen25_72b_scitrace_rep3",
+      "config": "experiments/runs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep3",
+      "run_key": "qwen25_72b_scitrace_rep3",
+      "config": "experiments/runs/json/qwen25_72b_scitrace.json",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep3/coverage.json"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep3",
+      "run_key": "qwen25_72b_scitrace_rep3",
+      "config": "experiments/runs/qwen25_72b_scitrace.yaml",
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep3",
+      "json_dir": "data/results/runs/qwen25_72b_scitrace_rep3/json",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep3/coverage.json"
+    }
+  ]
+}

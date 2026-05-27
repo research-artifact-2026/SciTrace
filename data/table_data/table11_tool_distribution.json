@@ -1,0 +1,36 @@
+{
+  "table": "Table 11",
+  "title": "Tool-type distribution on Qwen2.5-72B high-risk tasks",
+  "rows": [
+    {
+      "tool_type": "Search/Retrieval",
+      "safescientist": 38.2,
+      "scitrace_proposed": 37.9,
+      "scitrace_executed": 39.1
+    },
+    {
+      "tool_type": "Bio/Chem",
+      "safescientist": 22.4,
+      "scitrace_proposed": 22.1,
+      "scitrace_executed": 19.8
+    },
+    {
+      "tool_type": "Simulation",
+      "safescientist": 18.6,
+      "scitrace_proposed": 18.8,
+      "scitrace_executed": 17.2
+    },
+    {
+      "tool_type": "Code/Data",
+      "safescientist": 14.3,
+      "scitrace_proposed": 14.5,
+      "scitrace_executed": 17.4
+    },
+    {
+      "tool_type": "Other",
+      "safescientist": 6.5,
+      "scitrace_proposed": 6.7,
+      "scitrace_executed": 6.5
+    }
+  ]
+}

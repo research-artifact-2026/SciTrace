@@ -1,0 +1,69 @@
+{
+  "table": "Table 15",
+  "title": "Compositional escape details on Qwen2.5-72B",
+  "rows": [
+    {
+      "domain": "Biology",
+      "escapes": 18,
+      "detected": 15,
+      "rate": 83.3,
+      "avg_len": 4.2,
+      "min": 2,
+      "max": 7
+    },
+    {
+      "domain": "Chemistry",
+      "escapes": 16,
+      "detected": 13,
+      "rate": 81.3,
+      "avg_len": 3.8,
+      "min": 2,
+      "max": 6
+    },
+    {
+      "domain": "Physics",
+      "escapes": 9,
+      "detected": 7,
+      "rate": 77.8,
+      "avg_len": 3.1,
+      "min": 2,
+      "max": 5
+    },
+    {
+      "domain": "Medicine",
+      "escapes": 12,
+      "detected": 10,
+      "rate": 83.3,
+      "avg_len": 3.5,
+      "min": 2,
+      "max": 6
+    },
+    {
+      "domain": "Info Sci.",
+      "escapes": 14,
+      "detected": 9,
+      "rate": 64.3,
+      "avg_len": 2.9,
+      "min": 2,
+      "max": 5
+    },
+    {
+      "domain": "Material",
+      "escapes": 11,
+      "detected": 9,
+      "rate": 81.8,
+      "avg_len": 3.4,
+      "min": 2,
+      "max": 5
+    },
+    {
+      "domain": "Total",
+      "escapes": 80,
+      "detected": 63,
+      "rate": 78.8,
+      "avg_len": 3.5,
+      "min": 2,
+      "max": 7
+    }
+  ]
+}

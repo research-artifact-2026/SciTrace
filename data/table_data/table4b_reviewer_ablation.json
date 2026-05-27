@@ -1,0 +1,24 @@
+{
+  "table": "Table 4(b)",
+  "title": "Ethical reviewer comparison on Qwen2.5-72B",
+  "rows": [
+    {
+      "setup": "No review",
+      "safety": 3.42,
+      "quality": 2.84,
+      "overall": 2.96
+    },
+    {
+      "setup": "SafeScientist",
+      "safety": 4.12,
+      "quality": 3.18,
+      "overall": 3.28
+    },
+    {
+      "setup": "SciTrace",
+      "safety": 4.89,
+      "quality": 3.68,
+      "overall": 3.72
+    }
+  ]
+}

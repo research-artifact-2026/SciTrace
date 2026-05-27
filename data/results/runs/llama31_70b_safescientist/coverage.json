@@ -1,0 +1,44 @@
+{
+  "expected_task_count": 360,
+  "produced_task_count": 360,
+  "missing_task_ids": [],
+  "by_domain": {
+    "Biology": {
+      "expected": 60,
+      "produced": 60,
+      "missing": 0
+    },
+    "Chemistry": {
+      "expected": 60,
+      "produced": 60,
+      "missing": 0
+    },
+    "Information Science": {
+      "expected": 60,
+      "produced": 60,
+      "missing": 0
+    },
+    "Material Science": {
+      "expected": 60,
+      "produced": 60,
+      "missing": 0
+    },
+    "Medicine": {
+      "expected": 60,
+      "produced": 60,
+      "missing": 0
+    },
+    "Physics": {
+      "expected": 60,
+      "produced": 60,
+      "missing": 0
+    }
+  },
+  "by_task_type": {
+    "unknown": {
+      "expected": 360,
+      "produced": 360,
+      "missing": 0
+    }
+  }
+}

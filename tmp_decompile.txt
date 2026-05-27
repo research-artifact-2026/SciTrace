@@ -1,0 +1,304 @@
+﻿=== <module> (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:1) ===
+varnames ()
+consts ['\nUsage:\n  python scripts/run_single_config.py --config experiments/configs/qwen25_72b_scitrace.yaml\n  (or experiments/configs/json/qwen25_72b_scitrace.json / .yml)\n  [--max_tasks N] [--domain Biology] [--risk_type intentional_malice] [--seed 42]\n  [--offline_deterministic] [--skip_grading]\n', 0, 1, '.yaml', '.yml', 'data/results/runs', '__main__']
+  === resolve_output_dir (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:39) ===
+  varnames ('config', 'experiment_name', 'raw', 'legacy', 'parts', 'suffix')
+  consts ['Resolve canonical run output directory (legacy ``log_dir`` aliases ``output_dir``).', 'output_dir', 'log_dir', '/', 2, 0, 'logs', 1, 'experiments', 'run']
+  === load_raw_config (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:56) ===
+  varnames ('config_path', 'suffix', 'text', 'data')
+  consts ['Load experiment config from JSON or YAML (.yaml / .yml).', 'utf-8', '.json', 'Unsupported config format ', ': use .json, .yaml, or .yml (', ')', 'Config root must be a mapping, got ']
+  === _merge_setup (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:73) ===
+  varnames ('base', 'setup', 'merged', 'k', 'v')
+  consts ['sir', 'ctv', 'reviewer']
+  === _task_types (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:85) ===
+  varnames ('benchmark_cfg', 'configured', 't')
+  consts ['task_types', 'research', 'tool']
+  === select_tasks (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:90) ===
+  varnames ('loader', 'benchmark_cfg', 'domain', 'risk_type', 'max_tasks', 'expected', 'domains', 'task_type', 'loaded', 'task', 'merged')
+  consts ['Return expected tasks and selected tasks (after optional max_tasks cut).', 'domains', 'research', 'domain', 'task_type']
+  === build_coverage_manifest (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:117) ===
+  varnames ('expected_tasks', 'produced_task_ids', 't', 'expected_ids', 'task_id', 'missing_ids', 'expected_by_domain', 'produced_by_domain', 'expected_by_type', 'produced_by_type', 'task', 'domain', 'task_type', 'count')
+  consts ['task_id', 'domain', 'unknown', 'task_type', 0, 1]
+  === write_coverage_manifest (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:155) ===
+  varnames ('output_dir', 'expected_tasks', 'produced_task_ids', 'payload')
+  consts ['coverage.json', 2, 'utf-8']
+  === _offline_grade (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:161) ===
+  varnames ('output', 'rejected')
+  consts ['Deterministic local grade used when judge API access is unavailable.', 'rejected', 'task_id', 4.5, 5.0, 3.5, 3.6, 3.7, 'Offline deterministic grade.']
+  === _prepare_config (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:178) ===
+  varnames ('raw', 'offline_deterministic', 'cfg', 'backbone')
+  consts ['backbone', 'deterministic', 'deterministic-offline', 0.0, 4096]
+  === _run_one (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:194) ===
+  varnames ('config', 'args', 'seed', 'pipeline', 'loader', 'bench', 'expected_tasks', 'tasks', 'exp_name', 'output_dir_rel', 'output_dir', 'output_json_dir', 'log_path', 'grader', 'results', 'produced_task_ids', 'log_file', 'task', 'out', 'graded', 'task_id', 'metrics', 'log_file_rel')
+  consts ['seed', 42, 'benchmark', 'experiment_name', 'run', True, 'run_', '%Y%m%dT%H%M%SZ', '.jsonl', 'evaluation', 'w', 'utf-8', 'tool_call_log', 'task_id', '.json', 2, 'domain', 'risk_type', 'task_type', 'method', 'rejected', 'safety_score', 'ctv_detected_escape', '\n', 'metrics.json', '\\', '/', 'run_summary.json']
+  === main (C:\Users\czarb\Projects\scitrace\scripts\run_single_config.py:273) ===
+  varnames ('parser', 'args', 'config_path', 'raw', 'sub', 'base', 'setup', 'cfg')
+  consts ['--config', True, '--max_tasks', '--domain', '--risk_type', '--seed', '--offline_deterministic', 'store_true', 'Use deterministic local backbone for minimal offline runs.', '--skip_grading', 'Skip judge API grading and use deterministic local grading.', 0, '--max_tasks must be >= 0 when provided', 'configs', '\n=== ', 'experiment_name', 'config', ' ===', 'setups', 'backbone', 'benchmark', 'evaluation', 'enabled', 'seed', 42, '\n=== setup: ', 'name', 'output_dir']
+--- DIS main ---
+273           RESUME                   0
+
+274           LOAD_GLOBAL              0 (logging)
+              LOAD_ATTR                2 (basicConfig)
+              PUSH_NULL
+              LOAD_GLOBAL              0 (logging)
+              LOAD_ATTR                4 (INFO)
+              LOAD_CONST               1 (('level',))
+              CALL_KW                  1
+              POP_TOP
+
+275           LOAD_GLOBAL              6 (argparse)
+              LOAD_ATTR                8 (ArgumentParser)
+              PUSH_NULL
+              CALL                     0
+              STORE_FAST               0 (parser)
+
+276           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+              LOAD_CONST               2 ('--config')
+              LOAD_CONST               3 (True)
+              LOAD_GLOBAL             12 (Path)
+              LOAD_CONST               4 (('required', 'type'))
+              CALL_KW                  3
+              POP_TOP
+
+277           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+              LOAD_CONST               5 ('--max_tasks')
+              LOAD_GLOBAL             14 (int)
+              LOAD_CONST               0 (None)
+              LOAD_CONST               6 (('type', 'default'))
+              CALL_KW                  3
+              POP_TOP
+
+278           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+              LOAD_CONST               7 ('--domain')
+              LOAD_CONST               0 (None)
+              LOAD_CONST               8 (('default',))
+              CALL_KW                  2
+              POP_TOP
+
+279           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+              LOAD_CONST               9 ('--risk_type')
+              LOAD_CONST               0 (None)
+              LOAD_CONST               8 (('default',))
+              CALL_KW                  2
+              POP_TOP
+
+280           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+              LOAD_CONST              10 ('--seed')
+              LOAD_GLOBAL             14 (int)
+              LOAD_CONST               0 (None)
+              LOAD_CONST               6 (('type', 'default'))
+              CALL_KW                  3
+              POP_TOP
+
+281           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+
+282           LOAD_CONST              11 ('--offline_deterministic')
+
+283           LOAD_CONST              12 ('store_true')
+
+284           LOAD_CONST              13 ('Use deterministic local backbone for minimal offline runs.')
+
+281           LOAD_CONST              14 (('action', 'help'))
+              CALL_KW                  3
+              POP_TOP
+
+286           LOAD_FAST                0 (parser)
+              LOAD_ATTR               11 (add_argument + NULL|self)
+
+287           LOAD_CONST              15 ('--skip_grading')
+
+288           LOAD_CONST              12 ('store_true')
+
+289           LOAD_CONST              16 ('Skip judge API grading and use deterministic local grading.')
+
+286           LOAD_CONST              14 (('action', 'help'))
+              CALL_KW                  3
+              POP_TOP
+
+291           LOAD_FAST                0 (parser)
+              LOAD_ATTR               17 (parse_args + NULL|self)
+              CALL                     0
+              STORE_FAST               1 (args)
+
+292           LOAD_FAST                1 (args)
+              LOAD_ATTR               18 (max_tasks)
+              POP_JUMP_IF_NONE        27 (to L1)
+              LOAD_FAST                1 (args)
+              LOAD_ATTR               18 (max_tasks)
+              LOAD_CONST              17 (0)
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       11 (to L1)
+
+293           LOAD_GLOBAL             21 (ValueError + NULL)
+              LOAD_CONST              18 ('--max_tasks must be >= 0 when provided')
+              CALL                     1
+              RAISE_VARARGS            1
+
+295   L1:     LOAD_GLOBAL             23 (resolve_config_path + NULL)
+              LOAD_FAST                1 (args)
+              LOAD_ATTR               24 (config)
+              LOAD_GLOBAL             26 (ROOT)
+              LOAD_CONST              19 (('root',))
+              CALL_KW                  2
+              STORE_FAST               2 (config_path)
+
+296           LOAD_GLOBAL             29 (_prepare_config + NULL)
+
+297           LOAD_GLOBAL             31 (load_raw_config + NULL)
+              LOAD_FAST                2 (config_path)
+              CALL                     1
+
+298           LOAD_FAST                1 (args)
+              LOAD_ATTR               32 (offline_deterministic)
+
+296           LOAD_CONST              20 (('offline_deterministic',))
+              CALL_KW                  2
+              STORE_FAST               3 (raw)
+
+301           LOAD_CONST              21 ('configs')
+              LOAD_FAST                3 (raw)
+              CONTAINS_OP              0
+              POP_JUMP_IF_FALSE       79 (to L4)
+              LOAD_GLOBAL             35 (isinstance + NULL)
+              LOAD_FAST                3 (raw)
+              LOAD_CONST              21 ('configs')
+              BINARY_SUBSCR
+              LOAD_GLOBAL             36 (list)
+              CALL                     2
+              TO_BOOL
+              POP_JUMP_IF_FALSE       55 (to L4)
+
+302           LOAD_FAST                3 (raw)
+              LOAD_CONST              21 ('configs')
+              BINARY_SUBSCR
+              GET_ITER
+      L2:     FOR_ITER                45 (to L3)
+              STORE_FAST               4 (sub)
+
+303           LOAD_GLOBAL             39 (print + NULL)
+              LOAD_CONST              22 ('\n=== ')
+              LOAD_FAST                4 (sub)
+              LOAD_ATTR               41 (get + NULL|self)
+              LOAD_CONST              23 ('experiment_name')
+              LOAD_CONST              24 ('config')
+              CALL                     2
+              FORMAT_SIMPLE
+              LOAD_CONST              25 (' ===')
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+
+304           LOAD_GLOBAL             43 (_run_one + NULL)
+              LOAD_FAST_LOAD_FAST     65 (sub, args)
+              CALL                     2
+              POP_TOP
+              JUMP_BACKWARD           47 (to L2)
+
+302   L3:     END_FOR
+              POP_TOP
+
+305           RETURN_CONST             0 (None)
+
+307   L4:     LOAD_CONST              26 ('setups')
+              LOAD_FAST                3 (raw)
+              CONTAINS_OP              0
+              POP_JUMP_IF_FALSE      164 (to L7)
+
+309           LOAD_FAST                3 (raw)
+              LOAD_CONST              27 ('backbone')
+              BINARY_SUBSCR
+
+310           LOAD_FAST                3 (raw)
+              LOAD_ATTR               41 (get + NULL|self)
+              LOAD_CONST              28 ('benchmark')
+              BUILD_MAP                0
+              CALL                     2
+
+311           LOAD_FAST                3 (raw)
+              LOAD_ATTR               41 (get + NULL|self)
+              LOAD_CONST              29 ('evaluation')
+              BUILD_MAP                0
+              CALL                     2
+
+312           LOAD_CONST              30 ('enabled')
+              LOAD_CONST               3 (True)
+              BUILD_MAP                1
+
+313           LOAD_FAST                3 (raw)
+              LOAD_ATTR               41 (get + NULL|self)
+              LOAD_CONST              31 ('seed')
+              LOAD_CONST              32 (42)
+              CALL                     2
+
+308           LOAD_CONST              33 (('backbone', 'benchmark', 'evaluation', 'fallback_filters', 'seed'))
+              BUILD_CONST_KEY_MAP      5
+              STORE_FAST               5 (base)
+
+315           LOAD_FAST                3 (raw)
+              LOAD_CONST              26 ('setups')
+              BINARY_SUBSCR
+              GET_ITER
+      L5:     FOR_ITER                93 (to L6)
+              STORE_FAST               6 (setup)
+
+316           LOAD_GLOBAL             39 (print + NULL)
+              LOAD_CONST              34 ('\n=== setup: ')
+              LOAD_FAST                6 (setup)
+              LOAD_CONST              35 ('name')
+              BINARY_SUBSCR
+              FORMAT_SIMPLE
+              LOAD_CONST              25 (' ===')
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+
+317           LOAD_GLOBAL             29 (_prepare_config + NULL)
+
+318           LOAD_GLOBAL             45 (_merge_setup + NULL)
+              LOAD_FAST_LOAD_FAST     86 (base, setup)
+              CALL                     2
+
+319           LOAD_FAST                1 (args)
+              LOAD_ATTR               32 (offline_deterministic)
+
+317           LOAD_CONST              20 (('offline_deterministic',))
+              CALL_KW                  2
+              STORE_FAST               7 (cfg)
+
+321           LOAD_GLOBAL             47 (str + NULL)
+              LOAD_GLOBAL             13 (Path + NULL)
+              LOAD_FAST                3 (raw)
+              LOAD_CONST              36 ('output_dir')
+              BINARY_SUBSCR
+              CALL                     1
+              LOAD_FAST                6 (setup)
+              LOAD_CONST              35 ('name')
+              BINARY_SUBSCR
+              BINARY_OP               11 (/)
+              CALL                     1
+              LOAD_FAST                7 (cfg)
+              LOAD_CONST              36 ('output_dir')
+              STORE_SUBSCR
+
+322           LOAD_GLOBAL             43 (_run_one + NULL)
+              LOAD_FAST_LOAD_FAST    113 (cfg, args)
+              CALL                     2
+              POP_TOP
+              JUMP_BACKWARD           95 (to L5)
+
+315   L6:     END_FOR
+              POP_TOP
+
+323           RETURN_CONST             0 (None)
+
+325   L7:     LOAD_GLOBAL             43 (_run_one + NULL)
+              LOAD_FAST_LOAD_FAST     49 (raw, args)
+              CALL                     2
+              POP_TOP
+              RETURN_CONST             0 (None)

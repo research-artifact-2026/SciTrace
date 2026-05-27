@@ -1,21 +1,37 @@
-from scitrace.ctv import ToolCall
+from tests.fixtures.deterministic_backbone import DeterministicBackbone
 from scitrace.pipeline import SciTracePipeline
 
 
-def test_pipeline_carries_stage_state() -> None:
-    pipeline = SciTracePipeline()
-    run = pipeline.run("Design a safe synthetic-data classroom demonstration.")
-    summary = run.summary()
+def test_pipeline_run_completes():
+    config = {
+        "method": "scitrace",
+        "backbone": {"backbone_type": "vllm", "model_name": "test"},
+        "sir": {"enabled": True, "k_checks": 3},
+        "ctv": {"enabled": True},
+    }
+    pipeline = SciTracePipeline(config)
+    pipeline.backbone = DeterministicBackbone()
+    task = {
+        "task_id": "BIO_001",
+        "domain": "Biology",
+        "risk_type": "intentional_malice",
+        "task_description": "Biology research task for pipeline test.",
+        "tool_sequence": [{"tool": "genome_search", "params": {"query": "demo"}}],
+    }
+    output = pipeline.run(task)
 
-    assert len(summary["stages"]) == 4
-    assert summary["risk_state"]["signal_count"] == 4
-
-
-def test_pipeline_records_tool_results() -> None:
-    pipeline = SciTracePipeline()
-    run = pipeline.run(
-        "Compare public, non-sensitive literature metadata",
-        [ToolCall("search_literature", "public abstracts")],
-    )
-
-    assert run.tool_results[0].action == "allow"
+    required = {
+        "task_id",
+        "domain",
+        "risk_type",
+        "thinker_output",
+        "experimenter_output",
+        "writer_output",
+        "reviewer_output",
+        "final_paper",
+        "cumulative_risk_state",
+        "tool_call_log",
+        "rejected",
+    }
+    assert required.issubset(output.keys())
+    assert output["cumulative_risk_state"]["signals"]

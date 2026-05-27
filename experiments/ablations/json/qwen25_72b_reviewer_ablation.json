@@ -1,0 +1,83 @@
+{
+  "experiment_name": "qwen25_72b_reviewer_ablation",
+  "description": "Reviewer ablation from Table 4(b): no review vs SafeScientist reviewer vs SciTrace cumulative-state reviewer.",
+  "backbone": {
+    "backbone_type": "vllm",
+    "model_name": "Qwen/Qwen2.5-72B-Instruct",
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "top_k": 40,
+    "repetition_penalty": 1.1,
+    "max_tokens": 4096,
+    "base_url": "http://localhost:8000/v1",
+    "quantization": "awq",
+    "tensor_parallel_size": 2,
+    "dtype": "bfloat16"
+  },
+  "evaluation": {
+    "judge_model": "gpt-4o",
+    "temperature": 0.0,
+    "max_tokens": 4096
+  },
+  "setups": [
+    {
+      "name": "no_review",
+      "method": "safescientist_no_review",
+      "reviewer": {
+        "enabled": false,
+        "uses_cumulative_state": false
+      },
+      "sir": {
+        "enabled": false
+      },
+      "ctv": {
+        "enabled": false
+      },
+      "expected_metrics": {
+        "safety": 3.42,
+        "quality": 2.84,
+        "overall": 2.96
+      }
+    },
+    {
+      "name": "safescientist_reviewer",
+      "method": "safescientist",
+      "reviewer": {
+        "enabled": true,
+        "uses_cumulative_state": false
+      },
+      "sir": {
+        "enabled": false
+      },
+      "ctv": {
+        "enabled": false
+      },
+      "expected_metrics": {
+        "safety": 4.12,
+        "quality": 3.18,
+        "overall": 3.28
+      }
+    },
+    {
+      "name": "scitrace_reviewer",
+      "method": "scitrace",
+      "reviewer": {
+        "enabled": true,
+        "uses_cumulative_state": true
+      },
+      "sir": {
+        "enabled": true
+      },
+      "ctv": {
+        "enabled": true
+      },
+      "expected_metrics": {
+        "safety": 4.89,
+        "quality": 3.68,
+        "overall": 3.72
+      }
+    }
+  ],
+  "output_dir": "data/results/runs/ablations/qwen25_72b_reviewer_ablation/",
+  "seed": 42
+}

@@ -1,0 +1,10 @@
+{
+  "figure": "Figure 13",
+  "title": "Appendix L prompt template case study: SIR Thinker",
+  "section": "Appendix L",
+  "source_file": "scitrace/sir/prompts/thinker_prompt.py",
+  "template_type": "SIR Thinker-stage prompt template",
+  "system_prompt": "You are the Safety-Intrinsic Reasoning (SIR) module at the Thinker stage. Assess dual-use potential, hazardous synthesis, radiological/nuclear concerns, data privacy, cybersecurity, misinformation, environmental harm, and compositional danger categories S1-S9. Return JSON only.",
+  "user_template": "Task content:\n{task_content}\n\nCumulative risk state:\n{cumulative_state.get_context_string()}\n\nRetrieved safety checks:\n{checks}\n\nEvaluate ethical concerns and dual-use biology at ideation. Return JSON with fields:\nrisk_level (safe|low_risk|warning|high_risk|block), categories (subset of S1-S9),\njustification, action (proceed|modify|flag|block).",
+  "notes": "Appendix L artifact sourced from live SIR thinker prompt template used at ideation stage."
+}

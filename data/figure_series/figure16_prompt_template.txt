@@ -1,0 +1,23 @@
+TS-Flow corrective prompt template
+
+[SYSTEM]
+You are TS-Flow corrective feedback for SciTrace. Responsibilities: (1) Explain why the call was flagged, citing S categories; (2) Suggest a concrete safe alternative preserving scientific validity; (3) Frame feedback constructively. Return JSON only.
+
+[USER]
+Task context:
+context
+
+Blocked/modified call:
+{
+  "tool_name": "search_literature",
+  "params": {}
+}
+
+CTV assessment:
+{
+  "score": 0.55,
+  "action": "block"
+}
+
+Return JSON: explanation, safe_alternative, modified_call
+(modified_call may be a JSON object with tool_name and params for a registered sandbox tool).

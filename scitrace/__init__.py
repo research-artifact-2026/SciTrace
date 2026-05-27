@@ -1,16 +1,5 @@
-"""SciTrace reference scaffold."""
+"""SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents."""
 
-from .ctv import CompositionalToolChainVerifier, ToolCall
-from .pipeline import SciTracePipeline
-from .risk_state import CumulativeRiskState, RiskLevel, RiskSignal
-from .sir import SafetyIntrinsicReasoner
+from scitrace.pipeline import SciTracePipeline
 
-__all__ = [
-    "CompositionalToolChainVerifier",
-    "CumulativeRiskState",
-    "RiskLevel",
-    "RiskSignal",
-    "SafetyIntrinsicReasoner",
-    "SciTracePipeline",
-    "ToolCall",
-]
+__all__ = ["SciTracePipeline"]

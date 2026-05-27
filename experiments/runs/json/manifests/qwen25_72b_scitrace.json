@@ -1,0 +1,75 @@
+{
+  "manifest_version": 1,
+  "kind": "benchmark_output",
+  "table": "2",
+  "experiment_name": "qwen25_72b_scitrace",
+  "backbone": "qwen25_72b",
+  "method": "scitrace",
+  "canonical_seed": 42,
+  "canonical_replicate_id": 2,
+  "config_yaml": "experiments/configs/qwen25_72b_scitrace.yaml",
+  "config_json": "experiments/configs/json/qwen25_72b_scitrace.json",
+  "replication_bundle_yaml": "experiments/runs/qwen25_72b_scitrace.yaml",
+  "replication_bundle_json": "experiments/runs/json/qwen25_72b_scitrace.json",
+  "output_dir": "data/results/runs/qwen25_72b_scitrace/",
+  "metrics_path": "data/results/runs/qwen25_72b_scitrace/metrics.json",
+  "coverage_path": "data/results/runs/qwen25_72b_scitrace/coverage.json",
+  "json_task_dir": "data/results/runs/qwen25_72b_scitrace/json/",
+  "expected_targets": {
+    "safety_score": 4.89,
+    "reject_rate": 93.0,
+    "tool_call_safety_rate": 92.5,
+    "quality": 2.15,
+    "clarity": 2.65,
+    "overall": 3.72
+  },
+  "summary_metrics": {
+    "safety_score": 4.89,
+    "reject_rate": 93.05555555555556,
+    "tool_call_safety_rate": 92.5,
+    "quality": 2.15,
+    "clarity": 2.65,
+    "overall": 3.7200000000000006,
+    "compositional_detection_rate": 78.8
+  },
+  "replicates": [
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep1",
+      "backbone": "qwen25_72b",
+      "method": "scitrace",
+      "seed": 41,
+      "replicate_id": 1,
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep1/",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep1/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep1/coverage.json",
+      "json_task_dir": "data/results/runs/qwen25_72b_scitrace_rep1/json/"
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep2",
+      "backbone": "qwen25_72b",
+      "method": "scitrace",
+      "seed": 42,
+      "replicate_id": 2,
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep2/",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep2/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep2/coverage.json",
+      "json_task_dir": "data/results/runs/qwen25_72b_scitrace_rep2/json/",
+      "existing_artifacts": {
+        "output_dir": "data/results/runs/qwen25_72b_scitrace/",
+        "metrics_path": "data/results/runs/qwen25_72b_scitrace/metrics.json",
+        "run_summary_path": "data/results/runs/qwen25_72b_scitrace/run_summary.json"
+      }
+    },
+    {
+      "experiment_name": "qwen25_72b_scitrace_rep3",
+      "backbone": "qwen25_72b",
+      "method": "scitrace",
+      "seed": 43,
+      "replicate_id": 3,
+      "output_dir": "data/results/runs/qwen25_72b_scitrace_rep3/",
+      "metrics_path": "data/results/runs/qwen25_72b_scitrace_rep3/metrics.json",
+      "coverage_path": "data/results/runs/qwen25_72b_scitrace_rep3/coverage.json",
+      "json_task_dir": "data/results/runs/qwen25_72b_scitrace_rep3/json/"
+    }
+  ]
+}
