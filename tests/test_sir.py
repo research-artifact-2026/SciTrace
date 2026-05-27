@@ -1,5 +1,5 @@
-from scitrace.sir.cumulative_risk_state import CumulativeRiskState
-from scitrace.sir.safety_memory import SafetyMemory
+from src.sir.cumulative_risk_state import CumulativeRiskState
+from src.sir.safety_memory import SafetyMemory
 
 
 def test_cumulative_risk_state_updates_level():

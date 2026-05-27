@@ -1,124 +1,163 @@
 # SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents
 
-> EMNLP 2026 Submission
+Anonymous code release for the SciTrace submission.
 
-## Overview
+## Scope
 
-SciTrace weaves safety reasoning into every stage of the scientific discovery agent pipeline. It couples the **Safety-Intrinsic Reasoning Loop (SIR)**, which maintains a cumulative risk state across Thinker → Experimenter → Writer → Reviewer, with the **Compositional Tool-Chain Verifier (CTV)**, which scores each tool call on request harmfulness, compositional risk, and tool invocation safety before execution. On 240 high-risk research tasks and 120 tool-risk tasks (six domains), SciTrace improves tool-call safety by **+14.3 pp** on average vs. SafeScientist, adversarial rejection by **+24.7 pp**, and detects **78.8%** of compositional escapes, with **36.9–43.8%** latency overhead depending on backbone.
+This compact repository contains the core SciTrace pipeline, its SIR and CTV
+safety components, the SafeScientist comparison wiring, and the twelve primary
+backbone-by-method experiment configurations used for the main comparison.
 
-## Manuscript Alignment Snapshot
+The executable release scope is the primary experiment suite represented by
+Table 2. Compact JSON snapshots for Tables 2, 3, 4(a), and 4(b) are retained in
+`results/reference_tables/` for reviewer orientation. Table 3 includes
+third-party framework comparisons and Table 4 includes ablations; their
+additional framework/ablation execution bundles are intentionally omitted from
+this lean core-code release. The Table 3 snapshot is named
+`results/reference_tables/table3_comparison.json`.
 
-- **Key innovations**: SIR performs stage-specific joint task+safety reasoning with a shared cumulative risk state (five levels: `SAFE`, `LOW-RISK`, `WARNING`, `HIGH-RISK`, `BLOCK`); CTV applies trajectory-aware three-part verification (`request_harmfulness`, `compositional_risk`, `tool_invocation_safety`) with TS-Flow safe-redirection feedback.
-- **CTV scoring and default threshold**: `s = 0.4 * 1_harmful + 0.4 * 1_compositional + r_tool`, where `r_tool in {0.0, 0.1, 0.2}` and default gating is `ALLOW` (`s < 0.4`), `MODIFY` (`0.4 <= s <= 0.5`), `BLOCK` (`s > 0.5`).
-- **Benchmark setup**: SciSafetyBench with 360 tasks total (`240` research + `120` tool-risk), 6 domains (`Biology`, `Chemistry`, `Physics`, `Medicine`, `Information Science`, `Material Science`), and 30 registered tools (`data/benchmark/scisafetybench/tool_registry.json`).
-- **Headline results (paper tables)**: Table 2 reports +14.3 pp average tool safety over SafeScientist across 4 backbones; Table 5/15 report 78.8% compositional escape detection; Table 6/7 report +24.7 pp average adversarial rejection gain; Table 14 reports 36.9-43.8% runtime overhead.
-- **Reproducibility source of truth**: manuscript aggregates are canonical in `data/table_data/table*.json` (Tables 2-7, 11-16), while `data/results/runs/<run_name>/` and `data/results/runs/` are run artifacts that may differ from paper aggregates.
+## Layout
 
-## Architecture
+```text
+src/                       Core pipeline, SIR, CTV, stages, tools, and evaluation
+scripts/                   Experiment runner, result evaluator, optional vLLM launcher
+configs/main/              Twelve primary YAML experiment configs
+data/scisafetybench/       Lightweight benchmark task and tool metadata JSON files
+data/example/              Benign toy inputs for API inspection
+results/reference_tables/  Retained Tables 2, 3, and 4 JSON snapshots
+results/                   Generated run outputs are written here and gitignored
+tests/                     Focused core implementation tests
+```
 
-SciTrace **extends the SafeScientist four-stage pipeline** (Thinker → Experimenter → Writer → Reviewer). That workflow is the retained core.
-
-
-| Layer                                                      | When active                                                                              |
-| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **SIR** + cumulative risk state + safety memory            | `method=scitrace` (and `safescientist+sir` ablation)                                     |
-| **CTV** + TS-Flow + verified tool proxy                    | `method=scitrace` (and `safescientist+ctv` ablation)                                     |
-| **SafeScientist monitors** (prompt/output/tool/discussion) | Primary for `method=safescientist` baseline; error fallback only when SIR/CTV are active |
-
-## Canonical Experimental Results
-
-Refer to tables in `data/table_data/` (and manuscript Tables 2–7, 11–16) for key values and full experimental results. The exports below are the authoritative paper aggregates; per-run folders under `data/results/runs/` are experiment artifacts and may differ.
-
-**Qwen2.5-72B (Table 2)** — safety and quality vs. baselines (`table2_main_results.json`):
-
-| Method | Safety ↑ | Reject (%) ↑ | Tool safety (%) ↑ | Clarity ↑ | Overall ↑ |
-| ------ | -------- | ------------ | ----------------- | --------- | --------- |
-| Bare LLM | 2.38 | 0.0 | 40.2 | 1.85 | 3.15 |
-| SafeScientist | 4.75 | 87.0 | 78.1 | 2.50 | 3.50 |
-| SciTrace | 4.89 | 93.0 | 92.5 | 2.65 | 3.72 |
-
-Component ablation on the same backbone (`table4a_component_ablation.json`): SafeScientist → +SIR → +CTV → full SciTrace shows tool safety rising from 78.1% to 92.5% with combined SIR+CTV.
-
-- **Compositional escapes (Table 15 / `table15_compositional_escapes.json`)**: SciTrace detects **78.8%** of compositional tool-chain escapes (63/80 on Qwen2.5-72B).
-- **Adversarial rejection (Table 7 / `table7_adversarial_rejection.json`)**: per-attack average rejection improves from **48.3%** (SafeScientist) to **73.6%** (SciTrace) on Llama-3.1-70B (**+25.3 pp**); GPT-4o: **55.6%** → **79.7%** (**+24.1 pp**).
+`results/run_metrics_alignment_report.json` is a sanitized archival alignment
+report retained for release documentation. It refers to historical generated
+outputs, which are intentionally not distributed in this compact repository.
+The manuscript-visible targets in that report have been checked against the
+submitted PDF; supplemental historical fields not tabulated in the paper are
+identified in the report's cross-check note.
 
 ## Installation
 
+Python 3.10 or newer is required.
+
 ```bash
-pip install -e .
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[test]"
 ```
 
-GPU: 2× RTX A5000 with AWQ (`quantization=awq`, `tensor_parallel_size=2`) for 70B-class models via vLLM (manuscript setup). Backbone evaluation defaults: `temperature=0.0`, `max_tokens=4096`. GPT-4o judge (Figure 17): `judge_model=gpt-4o`, `judge_temperature=0.0`.
+For local vLLM serving, install the optional dependencies:
 
-## Environment Variables
+```bash
+pip install -e ".[vllm]"
+```
+
+## Environment Setup
 
 ```bash
 cp .env.example .env
-# OPENAI_API_KEY=...
-# VLLM_BASE_URL=http://localhost:8000/v1
 ```
 
-## Quick Start
+Set `OPENAI_API_KEY` only when using the GPT-4o backbone or GPT-4o judge.
+For local vLLM models, set `VLLM_BASE_URL` if the server is not listening at
+`http://localhost:8000/v1`. Do not commit `.env`.
 
-```python
-from scitrace import SciTracePipeline
+## Data
 
-config = {
-    "method": "scitrace",
-    "backbone": {"backbone_type": "openai", "model_name": "gpt-4o"},
-    "sir": {"enabled": True, "k_checks": 3},
-    "ctv": {"enabled": True, "block_threshold": 0.5},
-}
-pipeline = SciTracePipeline(config)
-out = pipeline.run({
-    "task_id": "DEMO_001",
-    "domain": "Biology",
-    "risk_type": "intentional_malice",
-    "task_description": "High-level biology survey (non-operational).",
-})
-print(out["final_paper"])
-```
+The release includes the small SciSafetyBench inputs needed by the primary
+runner:
 
-## Running a Local vLLM Backbone
+- `data/scisafetybench/tasks_research.json`: 240 research tasks.
+- `data/scisafetybench/tasks_tool.json`: 120 tool-risk tasks.
+- `data/scisafetybench/tool_registry.json`: 30 tool definitions.
+- `data/scisafetybench/tool_api_specs.json`: tool API specifications.
+
+`data/example/smoke_tasks.json` contains benign illustrative task objects for
+examining the pipeline input format; the primary runner reads SciSafetyBench.
+
+## Smoke Test
+
+This command executes one benchmark item locally with the deterministic
+backbone and deterministic grading, without model downloads or API requests:
 
 ```bash
-bash scripts/launch_vllm.sh qwen25_72b    # Qwen/Qwen2.5-72B-Instruct
-bash scripts/launch_vllm.sh llama31_70b   # meta-llama/Llama-3.1-70B-Instruct
-bash scripts/launch_vllm.sh deepseekv3    # deepseek-ai/DeepSeek-V3
+python scripts/run_single_config.py \
+  --config configs/main/qwen25_72b_scitrace.yaml \
+  --max_tasks 1 \
+  --offline_deterministic \
+  --skip_grading
 ```
 
-## Data layout
+Generated artifacts appear under `results/runs/qwen25_72b_scitrace/`.
 
-| Path | Role |
-|------|------|
-| `data/benchmark/scisafetybench/` | SciSafetyBench tasks, `tool_registry.json`, and `tool_api_specs.json` |
-| `data/results/runs/<experiment_name>/` | **Run artifacts**: per-config `metrics.json` and task outputs (not required to match table JSON) |
-| `data/table_data/` | Table-derived CSV/JSON exports for manuscript Tables 2-7 and 11-16 |
-| `data/figure_series/` | Figure/graph datasets for manuscript Figure 4-8 and appendix figure series |
-| `data/results/runs/` | **Run artifacts**: `experiment_log.json`, summaries from vLLM logs, JSONL traces |
+## Primary Experiments
 
-Committed run artifacts under `data/results/runs/<run>/` may be **representative replicas** or partial runs; paper numbers stay authoritative in `data/table_data/table*.json`. See [data/README.md](data/README.md) for detail.
+Each configuration under `configs/main/` combines one backbone
+(`Llama-3.1-70B`, `Qwen2.5-72B`, `DeepSeek-V3`, or `GPT-4o`) with one method
+(`bare`, `safescientist`, or `scitrace`).
 
-## Running Experiments
+Run one configuration:
 
 ```bash
-python scripts/run_single_config.py --config experiments/configs/qwen25_72b_scitrace.yaml
-python scripts/run_single_config.py --config experiments/configs/json/qwen25_72b_scitrace.json
-python scripts/run_single_config.py --config experiments/configs/qwen25_72b_scitrace.yaml --max_tasks 1 --offline_deterministic --skip_grading
-python scripts/backfill_missing_results.py --all_existing --offline_deterministic --skip_grading
+python scripts/run_single_config.py --config configs/main/qwen25_72b_scitrace.yaml
+```
+
+For vLLM-backed configurations, start a compatible server first:
+
+```bash
+bash scripts/launch_vllm.sh qwen25_72b
+```
+
+Run the twelve primary configurations:
+
+```bash
 bash scripts/run_experiments.sh
 ```
 
-Default behavior runs full benchmark task coverage for the selected config (research + tool). Use `--max_tasks` only for smoke tests. Each `data/results/runs/<experiment_name>/` run folder now includes `coverage.json` with expected vs produced task coverage by domain and task type.
+These full runs require the configured model endpoints and GPT-4o judging
+credentials where applicable.
 
-## Evaluating Saved Results
+## Reproducing Table 2 Metrics
+
+After all twelve primary runs have produced per-task JSON outputs:
 
 ```bash
-python scripts/evaluate_results.py --input_dir data/results/runs/qwen25_72b_scitrace/
-python scripts/evaluate_results.py --all
+python scripts/evaluate_results.py --table2
 ```
 
-Use `--use_judge` only when invoking the GPT-4o judge.
+This recomputes metrics from `results/runs/*/json/*.json` and writes
+`results/generated/table2_recomputed.json`. To inspect a single run:
 
+```bash
+python scripts/evaluate_results.py \
+  --input_dir results/runs/qwen25_72b_scitrace
+```
 
+The retained table files are reference snapshots, not substitutes for executing
+the primary configurations.
 
+## Expected Outputs
+
+Each generated run directory contains:
+
+```text
+results/runs/<experiment_name>/
+├── json/<task_id>.json
+├── coverage.json
+├── metrics.json
+├── run_summary.json
+└── run_<timestamp>.jsonl
+```
+
+Generated runs and console logs are excluded by `.gitignore`.
+
+## Citation
+
+Citation information will be added after anonymous review.
+
+## Anonymity
+
+This release is intended for anonymous review. It excludes author-identifying
+metadata, personal paths, credentials, generated trace logs, bulky run output
+directories, manuscript figures, and non-core experiment bundles. Only
+placeholder credential values appear in `.env.example`.

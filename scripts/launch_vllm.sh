@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Manuscript GPU setup: 2× RTX A5000, AWQ quantization, tensor-parallel size 2.
+# Manuscript GPU setup: 2x RTX A5000, AWQ quantization, tensor-parallel size 2.
 set -euo pipefail
 
 MODEL_KEY="${1:-qwen25_72b}"

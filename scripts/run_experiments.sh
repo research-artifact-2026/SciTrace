@@ -6,36 +6,19 @@ if [[ "${1:-}" == "--parallel" ]]; then
   PARALLEL=1
 fi
 
-CONSOLE_LOG_DIR="data/results/runs/_console"
+CONSOLE_LOG_DIR="results/runs/_console"
+CONFIG_DIR="configs/main"
 mkdir -p "$CONSOLE_LOG_DIR"
-CONFIG_DIR="experiments/configs"
-CONFIG_JSON_DIR="$CONFIG_DIR/json"
 shopt -s nullglob
+configs=("$CONFIG_DIR"/*.yaml)
 
-# Prefer YAML when both exist (same basename): .yaml > .yml > .json (json/ subfolder)
-mapfile -t basenames < <(
-  {
-    for f in "$CONFIG_DIR"/*.yaml "$CONFIG_DIR"/*.yml "$CONFIG_JSON_DIR"/*.json; do
-      [[ -e "$f" ]] || continue
-      basename "$f" | sed -E 's/\.(json|yaml|yml)$//'
-    done
-  } | sort -u
-)
+if [[ "${#configs[@]}" -eq 0 ]]; then
+  echo "No primary YAML configs found in $CONFIG_DIR" >&2
+  exit 1
+fi
 
-for base in "${basenames[@]}"; do
-  cfg=""
-  if [[ -f "$CONFIG_DIR/${base}.yaml" ]]; then
-    cfg="$CONFIG_DIR/${base}.yaml"
-  elif [[ -f "$CONFIG_DIR/${base}.yml" ]]; then
-    cfg="$CONFIG_DIR/${base}.yml"
-  elif [[ -f "$CONFIG_JSON_DIR/${base}.json" ]]; then
-    cfg="$CONFIG_JSON_DIR/${base}.json"
-  elif [[ -f "$CONFIG_DIR/${base}.json" ]]; then
-    cfg="$CONFIG_DIR/${base}.json"
-  fi
-  [[ -n "$cfg" ]] || continue
-
-  name="$base"
+for cfg in "${configs[@]}"; do
+  name="$(basename "$cfg" .yaml)"
   if [[ "$PARALLEL" -eq 1 ]]; then
     python scripts/run_single_config.py --config "$cfg" >"${CONSOLE_LOG_DIR}/${name}.log" 2>&1 &
   else
@@ -48,4 +31,4 @@ if [[ "$PARALLEL" -eq 1 ]]; then
   wait
 fi
 
-echo "All experiments finished."
+echo "All primary experiments finished."

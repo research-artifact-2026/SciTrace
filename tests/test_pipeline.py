@@ -1,5 +1,5 @@
 from tests.fixtures.deterministic_backbone import DeterministicBackbone
-from scitrace.pipeline import SciTracePipeline
+from src.pipeline import SciTracePipeline
 
 
 def test_pipeline_run_completes():

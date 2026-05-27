@@ -1,15 +1,6 @@
-openai>=1.30.0
-anthropic>=0.25.0
-pydantic>=2.0.0
-torch>=2.2.0
-vllm>=0.4.0
-transformers>=4.40.0
-accelerate>=0.28.0
 numpy>=1.26.0
-scipy>=1.12.0
-# matplotlib/seaborn optional — figures are in LaTeX; use export_figure_data.py (data/table_data + data/figure_series)
-tqdm>=4.66.0
+openai>=1.30.0
+pydantic>=2.0.0
 python-dotenv>=1.0.0
-pytest>=8.0.0
 PyYAML>=6.0.0
-tiktoken>=0.6.0
+pytest>=8.0.0

@@ -1,7 +1,6 @@
 """
 Usage:
-  python scripts/run_single_config.py --config experiments/configs/qwen25_72b_scitrace.yaml
-  (or experiments/configs/json/qwen25_72b_scitrace.json / .yml)
+  python scripts/run_single_config.py --config configs/main/qwen25_72b_scitrace.yaml
   [--max_tasks N] [--domain Biology] [--risk_type intentional_malice] [--seed 42]
   [--offline_deterministic] [--skip_grading]
 """
@@ -22,21 +21,21 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from scitrace.benchmark.grader import PromptGrader
-from scitrace.benchmark.loader import SciSafetyBenchLoader
-from scitrace.benchmark.metrics import compute_metrics
-from scitrace.experiment_paths import resolve_config_path
-from scitrace.pipeline import SciTracePipeline
-from scitrace.results_paths import normalize_output_dir, run_json_dir
+from src.benchmark.grader import PromptGrader
+from src.benchmark.loader import SciSafetyBenchLoader
+from src.benchmark.metrics import compute_metrics
+from src.experiment_paths import resolve_config_path
+from src.pipeline import SciTracePipeline
+from src.results_paths import normalize_output_dir, run_json_dir
 
 logger = logging.getLogger(__name__)
 
 _YAML_SUFFIXES = frozenset({".yaml", ".yml"})
-RUNS_ROOT = Path("data/results/runs")
+RUNS_ROOT = Path("results/runs")
 
 
 def resolve_output_dir(config: dict, *, experiment_name: str) -> Path:
-    """Resolve canonical run output directory (legacy ``log_dir`` aliases ``output_dir``)."""
+    """Resolve the run output directory from configuration."""
     raw = config.get("output_dir")
     if not raw:
         legacy = config.get("log_dir")
@@ -55,10 +54,10 @@ def resolve_output_dir(config: dict, *, experiment_name: str) -> Path:
 def _assert_runs_output_dir(output_dir: Path) -> None:
     rel = output_dir.resolve().relative_to(ROOT.resolve())
     parts = rel.parts
-    if len(parts) < 3 or parts[:3] != ("data", "results", "runs"):
+    if len(parts) < 2 or parts[:2] != ("results", "runs"):
         raise ValueError(
-            f"Refusing to write outside data/results/runs: {output_dir} "
-            "(set output_dir under data/results/runs/<experiment_name>/)"
+            f"Refusing to write outside results/runs: {output_dir} "
+            "(set output_dir under results/runs/<experiment_name>/)"
         )
 
 

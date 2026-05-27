@@ -1,4 +1,4 @@
-from scitrace.safety import StageFallbackFilters
+from src.safety import StageFallbackFilters
 
 
 def test_fallback_disabled_returns_allow():

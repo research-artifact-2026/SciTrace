@@ -1,6 +1,6 @@
 import pytest
 
-from scitrace.ctv.scoring import SCORE_EXAMPLES, compute_ctv_score
+from src.ctv.scoring import SCORE_EXAMPLES, compute_ctv_score
 
 
 @pytest.mark.parametrize(

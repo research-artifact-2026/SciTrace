@@ -1,4 +1,4 @@
-from scitrace.tools import build_tool_registry, load_tool_metadata
+from src.tools import build_tool_registry, load_tool_metadata
 
 
 def test_tool_metadata_has_30_tools():

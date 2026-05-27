@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from scitrace.backbone.base_backbone import BaseBackbone
+from src.backbone.base_backbone import BaseBackbone
 
 
 class DeterministicBackbone(BaseBackbone):

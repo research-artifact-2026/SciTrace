@@ -1,10 +1,20 @@
 """All experiment methods use the same four-stage SafeScientist workflow."""
 
+from pathlib import Path
+
 import pytest
+import yaml
 from tests.fixtures.deterministic_backbone import DeterministicBackbone
 
-from scitrace.pipeline import SciTracePipeline
-from scitrace.pipeline_config import SafetyConfig
+from src.pipeline import SciTracePipeline
+from src.pipeline_config import SafetyConfig
+
+ROOT = Path(__file__).resolve().parents[1]
+MAIN_CONFIG_NAMES = {
+    f"{backbone}_{method}.yaml"
+    for backbone in ("llama31_70b", "qwen25_72b", "deepseekv3", "gpt4o")
+    for method in ("bare", "safescientist", "scitrace")
+}
 
 TASK = {
     "task_id": "T001",
@@ -26,6 +36,15 @@ def _pipeline(method: str) -> SciTracePipeline:
     )
     p.backbone = DeterministicBackbone()
     return p
+
+
+def test_primary_yaml_configs_are_complete_and_use_release_output_paths():
+    config_paths = sorted((ROOT / "configs" / "main").glob("*.yaml"))
+    assert {path.name for path in config_paths} == MAIN_CONFIG_NAMES
+    for path in config_paths:
+        config = yaml.safe_load(path.read_text(encoding="utf-8"))
+        assert config["experiment_name"] == path.stem
+        assert config["output_dir"] == f"results/runs/{path.stem}/"
 
 
 @pytest.mark.parametrize(

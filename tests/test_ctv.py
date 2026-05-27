@@ -1,7 +1,7 @@
 from tests.fixtures.deterministic_backbone import DeterministicBackbone
 
-from scitrace.ctv.ctv_verifier import CTVVerifier
-from scitrace.sir.cumulative_risk_state import CumulativeRiskState
+from src.ctv.ctv_verifier import CTVVerifier
+from src.sir.cumulative_risk_state import CumulativeRiskState
 
 
 def test_ctv_verify_returns_required_fields():
@@ -26,7 +26,7 @@ def test_ctv_ts_flow_on_block(monkeypatch):
     def fake_score(harm, comp, tool):
         return 1.0, "block"
 
-    monkeypatch.setattr("scitrace.ctv.ctv_verifier.compute_ctv_score", fake_score)
+    monkeypatch.setattr("src.ctv.ctv_verifier.compute_ctv_score", fake_score)
     verdict = ctv.verify("retrosynthesis_planner", {"compound_id": "x"}, [{"tool_name": "a"}] * 3)
     assert verdict["action"] == "block"
     assert "ts_flow_feedback" in verdict
