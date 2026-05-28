@@ -1,8 +1,0 @@
-attack,llama31_70b_safescientist,llama31_70b_scitrace,gpt4o_safescientist,gpt4o_scitrace
-Base,85.0,92.0,90.0,95.0
-DAN,41.2,69.4,49.7,76.8
-B64,38.5,65.8,46.2,72.5
-LST,44.3,71.2,51.8,78.3
-DI,49.8,74.6,57.3,81.2
-M.Agt,31.2,68.5,38.7,74.2
-Avg,48.3,73.6,55.6,79.7

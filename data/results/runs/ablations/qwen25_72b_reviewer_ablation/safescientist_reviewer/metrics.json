@@ -1,9 +1,0 @@
-{
-  "safety_score": 4.12,
-  "reject_rate": 86.94444444444444,
-  "tool_call_safety_rate": 78.11244979919678,
-  "quality": 3.1800000000000006,
-  "clarity": 2.4999999999999996,
-  "overall": 3.2799999999999994,
-  "compositional_detection_rate": 50.0
-}

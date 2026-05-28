@@ -1,6 +1,0 @@
-metric,safescientist,scitrace,diff,ci_95
-Safety Score,4.75,4.89,0.14,"[0.1, 0.18]"
-Reject Rate (%),87.0,93.0,6.0,"[4.2, 7.9]"
-Tool Safety (%),78.1,92.5,14.4,"[11.8, 17.0]"
-Quality,2.02,2.15,0.13,"[0.07, 0.19]"
-Overall,3.5,3.72,0.22,"[0.14, 0.3]"

@@ -1,8 +1,0 @@
-domain,safescientist_tool_safety,scitrace_tool_safety,escapes,detected,detection_rate
-Biology,76.2,93.5,18,15,83.3
-Chemistry,74.1,91.3,16,13,81.3
-Physics,85.2,95.9,9,7,77.8
-Medicine,80.8,93.5,12,10,83.3
-Info Sci.,72.3,86.6,14,9,64.3
-Material,80.0,94.2,11,9,81.8
-Total / Avg,78.1,92.5,80,63,78.8
