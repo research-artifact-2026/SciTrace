@@ -618,16 +618,16 @@ nav a[aria-current="page"] {
 }
 
 .anonymous-host .chart-canvas {
-  min-height: clamp(440px, 48vw, 640px);
+  min-height: clamp(400px, 42vw, 560px);
 }
 
 .anonymous-host .chart-canvas svg {
-  width: min(700px, 98%);
+  width: min(820px, 112%);
 }
 
 .anonymous-host .chart-info {
   justify-content: flex-start;
-  gap: clamp(24px, 4vw, 48px);
+  gap: clamp(20px, 3vw, 36px);
 }
 
 .benchmark-table table {
