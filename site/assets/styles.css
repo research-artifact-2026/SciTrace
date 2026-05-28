@@ -617,6 +617,19 @@ nav a[aria-current="page"] {
   color: var(--muted);
 }
 
+.anonymous-host .chart-canvas {
+  min-height: clamp(440px, 48vw, 640px);
+}
+
+.anonymous-host .chart-canvas svg {
+  width: min(700px, 98%);
+}
+
+.anonymous-host .chart-info {
+  justify-content: flex-start;
+  gap: clamp(24px, 4vw, 48px);
+}
+
 .benchmark-table table {
   min-width: 0;
 }

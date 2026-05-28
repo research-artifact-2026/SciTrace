@@ -1,3 +1,7 @@
+if (window.location.hostname.includes("anonymous.4open.science")) {
+  document.documentElement.classList.add("anonymous-host");
+}
+
 for (const button of document.querySelectorAll("[data-copy-target]")) {
   button.addEventListener("click", async () => {
     const target = document.querySelector(button.dataset.copyTarget);
