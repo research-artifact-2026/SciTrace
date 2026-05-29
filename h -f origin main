@@ -1,0 +1,311 @@
+[33mcommit 7b0a9fa5ddf0665315cd368d81f45d0211014fc1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 20:17:41 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 20:17:41 2026 -0500
+
+    delete title
+
+[33mcommit f6cc0e60a1df22b33d46a86ba552f1a9679b2235[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 20:12:50 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 20:12:50 2026 -0500
+
+    enhance chart again
+
+[33mcommit 0bfbf9e476d7798038da68650228754f1f6ef848[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 20:08:38 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 20:08:38 2026 -0500
+
+    adjust for anonymous
+
+[33mcommit ff737f99804c14b4bd55c252f5e346d9c587e211[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 19:56:37 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 19:56:37 2026 -0500
+
+    enhance chart
+
+[33mcommit 9d91c485867f50dd088e2f892ecf8f97430442d7[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 19:47:24 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 19:47:24 2026 -0500
+
+    remove unusable documents
+
+[33mcommit 49ec76383b7177c41ecc2fe7e5915d4a544f5a40[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 19:26:10 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 19:26:10 2026 -0500
+
+    revise chart
+
+[33mcommit 6c2318e8304c5e33062a396ea251ea04473983bc[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 18:40:34 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 18:40:34 2026 -0500
+
+    update final code
+
+[33mcommit a6ef98da67451f8c8c58e5e33f8626094c7406ba[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 13:43:29 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 13:43:29 2026 -0500
+
+    update paper,chart,delete paper link
+
+[33mcommit a790ab92baa6c357fda2cec82f3446bfb82440ba[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Wed May 27 09:21:53 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Wed May 27 09:21:53 2026 -0500
+
+    add code part
+
+[33mcommit 3028b6e352faa68d9c005c92ea1d4391cfd76bc2[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Tue May 26 02:57:16 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Tue May 26 02:57:16 2026 -0500
+
+    add figure 2
+
+[33mcommit d2db9558a26c5c4cfd954b848b600458bcf86fe6[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Tue May 26 02:42:28 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Tue May 26 02:42:28 2026 -0500
+
+    change figure2
+
+[33mcommit 93d5085a52f06d285ad1afbf93c2e2caf685bbe6[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Tue May 26 01:05:38 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Tue May 26 01:05:38 2026 -0500
+
+    remove picture
+
+[33mcommit c0e9acc055b307bc222f08d8aa1d1d86f5a1bc7f[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 23:10:29 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 23:10:29 2026 -0500
+
+    remove all citation
+
+[33mcommit c3199b9178c17b1d1641030a1a6fb9f7d160edf8[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 23:03:48 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 23:03:48 2026 -0500
+
+    remove topbar
+
+[33mcommit e56e7092506e8dd4275c8aa19333e1c14f5a70fe[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:58:35 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:58:35 2026 -0500
+
+    benchmark button
+
+[33mcommit 07954f788a9be403eac817b00ac26cdeda1013d4[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:51:56 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:51:56 2026 -0500
+
+    benchmark between method and experiment
+
+[33mcommit b6ea15c8eb7d27b19a964344475c3dab68c71ad9[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:41:01 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:41:01 2026 -0500
+
+    method double-check
+
+[33mcommit 1154006b6d6002e5cf98167c7011237a1ce4d499[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:31:01 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:31:01 2026 -0500
+
+    add 78.8& to result
+
+[33mcommit 09e7ab108becaa27767502c8eec47b112108fe53[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:17:40 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:17:40 2026 -0500
+
+    Bump site asset versions
+
+[33mcommit 2a6ff9c041458483e9e345c7b263e682b0570f84[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:06:07 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:06:07 2026 -0500
+
+    Seperate tables in Benchmark
+
+[33mcommit 9084aaf99dbbdf396f893e43dcf2898fc6274d55[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 22:00:11 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 22:00:11 2026 -0500
+
+    Hide citation section
+
+[33mcommit 41a3967a8410a253f93eb4f2092f361ebac927a9[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 21:52:55 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 21:52:55 2026 -0500
+
+    Update highlights result text
+
+[33mcommit c42c5d5da1fedd4ac3c3ee3e8aba6469f5d22571[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 21:48:53 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 21:48:53 2026 -0500
+
+    Add SOTA
+
+[33mcommit 0ea4d7849fe4778509f1191fe5e969b95455c64d[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 21:38:27 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 21:38:27 2026 -0500
+
+    Add all
+
+[33mcommit 94121a142748d5eb557094b04478de618a181381[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 20:49:08 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 20:49:08 2026 -0500
+
+    Improve paper page structure
+
+[33mcommit a315d3d43d948ebdc16a09a2c4d5f191b543f2db[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 20:36:41 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 20:36:41 2026 -0500
+
+    Add view transition animation
+
+[33mcommit e86ff725ff6272f9dc573cd5313316f41a3a6b7a[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 20:33:01 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 20:33:01 2026 -0500
+
+    Use single-page benchmark view
+
+[33mcommit 66abb6294141cadc45d77d5ac2b507c14484a55f[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 20:14:41 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 20:14:41 2026 -0500
+
+    Refine benchmark and experiment tables
+
+[33mcommit 0304ed35146e3ac0422a93cf070e0e5af3030a28[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 20:06:23 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 20:06:23 2026 -0500
+
+    Add Table 2 to experiments
+
+[33mcommit 4abb5e1adc30b47bf057f6077865501c72df2ae6[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 19:58:40 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 19:58:40 2026 -0500
+
+    Refine benchmark navigation
+
+[33mcommit a75fcfab59df0a03eca9ac15a9a214fa3001ae1b[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 19:53:06 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 19:53:06 2026 -0500
+
+    Make benchmark a standalone zoomable view
+
+[33mcommit 75c8b701a9beac225ce4c990da96c9ee98e8adb4[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 19:43:57 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 19:43:57 2026 -0500
+
+    Add benchmark visualization
+
+[33mcommit f8bf08f7a4972b83473aabd48e0f04d40b5953c9[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 17:18:26 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 17:18:26 2026 -0500
+
+    Use centered section containers
+
+[33mcommit abd5c4d82d48deaf058f6f39364d1089409df046[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 17:09:34 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 17:09:34 2026 -0500
+
+    Align section titles with content
+
+[33mcommit 8657c10e8542b6ba1b40ff804fe6f8f32fb26e93[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 17:04:21 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 17:04:21 2026 -0500
+
+    Align section headings and content
+
+[33mcommit 18bfe2050f4d1b61d8e9aa46ac7ce37059304ce9[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 17:01:47 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 17:01:47 2026 -0500
+
+    Center project page layout
+
+[33mcommit e9c428e7dcab08b9a35f1e62545748425cfbaa97[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 16:15:42 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 16:15:42 2026 -0500
+
+    Update Anonymous GitHub link
+
+[33mcommit ee30b787b2e3da6490259dcf7b938c5a73fb512d[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 16:09:49 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 16:09:49 2026 -0500
+
+    Add GitHub Pages docs site
+
+[33mcommit 26877542fc14794d460e645b7621211c40ec2562[m
+Author:     Anonymous Authors <anonymous@example.com>
+AuthorDate: Mon May 25 15:54:07 2026 -0500
+Commit:     Anonymous Authors <anonymous@example.com>
+CommitDate: Mon May 25 15:54:07 2026 -0500
+
+    Initial anonymous release
